@@ -1080,9 +1080,12 @@ input.main-search-input::placeholder {
 .header-1 .mega-menu-wrapper .header-main .header-left {
   display: flex;
   align-items: center;
+  gap: 90px;
 }
-.header-1 .mega-menu-wrapper .header-main .header-left .mean__menu-wrapper {
-  margin-left: 90px;
+@media (max-width: 1200px) {
+  .header-1 .mega-menu-wrapper .header-main .header-left {
+    gap: 0;
+  }
 }
 .header-1 .mega-menu-wrapper .header-main .header-right {
   gap: 40px;

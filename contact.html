@@ -441,7 +441,7 @@
             var map = new BMapGL.Map("mapContainer");
             var point = new BMapGL.Point(121.412489, 31.236533);
             map.centerAndZoom(point, 19);
-            map.enableScrollWheelZoom(true);
+            // map.enableScrollWheelZoom(true);
             var CURRENT_LANG = window.localStorage.getItem('CURRENT_LANG') === 'EN' ? 'EN' : 'CN'
             var infoWindow = new BMapGL.InfoWindow((CURRENT_LANG === 'EN' ? 'Laboratory Address:' : '实验室地址：') + '华东师范大学俊秀楼405室<br>'+ (CURRENT_LANG === 'EN' ? 'Office Address:' : '办公室地址：') +'华东师范大学俊秀楼412室', {
                 width: 320,
