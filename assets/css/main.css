@@ -1080,7 +1080,9 @@ input.main-search-input::placeholder {
 .header-1 .mega-menu-wrapper .header-main .header-left {
   display: flex;
   align-items: center;
-  gap: 90px;
+}
+.header-1 .mega-menu-wrapper .header-main .header-left .mean__menu-wrapper {
+  margin-left: 90px;
 }
 .header-1 .mega-menu-wrapper .header-main .header-right {
   gap: 40px;
@@ -7383,11 +7385,7 @@ input.main-search-input::placeholder {
   overflow: hidden;
   box-sizing: border-box;
 }
-@media (max-width: 575px) {
-  .blog-wrapper .single-blog-post .post-content {
-    padding-top: 20px;
-  }
-}
+
 .blog-wrapper .single-blog-post .post-content h2 {
   line-height: 1.4;
   font-size: 48px;
@@ -7404,11 +7402,7 @@ input.main-search-input::placeholder {
 .blog-wrapper .single-blog-post .post-content p {
   font-size: 16px;
 }
-@media (max-width: 767px) {
-  .blog-wrapper .single-blog-post .post-content {
-    padding: 30px 10px;
-  }
-}
+
 @media (max-width: 414px) {
   .blog-wrapper .single-blog-post .post-content h2 {
     font-size: 22px;
