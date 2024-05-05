@@ -9,6 +9,29 @@
 
     $(document).ready( function() {
 
+        // 设置语言
+        var CURRENT_LANG = window.localStorage.getItem('CURRENT_LANG') === 'EN' ? 'EN' : 'CN'
+        $.i18n.properties({
+            name: 'messages', // 资源文件名称
+            path: 'locales/', // 资源文件路径
+            mode: 'both', // 加载 both, visual, or names 模式
+            language: CURRENT_LANG, // 默认语言
+            callback: function() { // 加载完成后的回调函数
+                $('[i18n]').each(function() {
+                    $(this).text($.i18n.prop($(this).attr('i18n')));
+                });
+            }
+        });
+        if (window.localStorage.getItem('CURRENT_LANG') === 'EN') {
+            $('#setLang').append('<img src="assets/img/en.svg" style="display: block; width: 36px; height: 36px; cursor: pointer;" />')
+        } else {
+            $('#setLang').append('<img src="assets/img/cn.svg" style="display: block; width: 36px; height: 36px; cursor: pointer;" />')
+        }
+        $('#setLang').click(function() {
+            window.localStorage.setItem('CURRENT_LANG', window.localStorage.getItem('CURRENT_LANG') === 'EN' ? 'CN' : 'EN')
+            window.location.reload();
+        });
+
         //>> Mobile Menu Js Start <<//
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
