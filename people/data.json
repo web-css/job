@@ -1,0 +1,278 @@
+[
+	{
+		"position": 1,
+		"CN": {
+			"avatar": "0001.png",
+			"name": "李瑛",
+			"title": "博士 实验室PI",
+			"affiliations": "国家儿童医学中心、首都医科大学附属北京儿童医院、心身医学科学科带头人，副主任医师，副教授，青年博导",
+			"education": "2018年毕业于中国科学院大学（中国科学院心理研究所）认知神经科学博士，师从欧洲科学与艺术学院院士、杰青陈楚侨老师",
+			"professional_title": "",
+			"research_focus": "研究方向：儿童青少年精神疾病与心理健康",
+			"email": ""
+		},
+		"EN": {
+			"avatar": "0001.png",
+			"name": "Li Ying",
+			"title": "Doctor, Principal Investigator (PI) of the Laboratory",
+			"affiliations": "National Children’s Medical Center, Beijing Children’s Hospital affiliated with Capital Medical University, leader and associate director of the Psychosomatic Medicine department, Associate Professor, mentor for young Ph.D. candidates",
+			"education": "Graduated in 2018 with a Ph.D. in Cognitive Neuroscience from the University of Chinese Academy of Sciences (Institute of Psychology, Chinese Academy of Sciences). Mentored by Academician of the European Academy of Sciences and Arts, and distinguished young scholar, Chen Chuqiao.",
+			"professional_title": "",
+			"research_focus": "Research Focus: Mental illness and mental health in children and adolescents.",
+			"email": ""
+		}
+	},
+	{
+		"position": 1,
+		"CN": {
+			"avatar": "0002.png",
+			"name": "徐会",
+			"title": "博士，实验室Co-PI",
+			"affiliations": "国家儿童医学中心、首都医科大学附属北京儿童医院，大数据中心助理研究员",
+			"education": "天津医科大学，流行病与卫生统计学，博士",
+			"professional_title": "",
+			"research_focus": "研究方向：儿童青少年神经心理发育障碍和精神心理健康；儿童青少年认知行为与心理健康队列；医学科研设计、大数据挖掘",
+			"email": ""
+		},
+		"EN": {
+			"avatar": "0002.png",
+			"name": "Xu Hui",
+			"title": "Doctor, Co-Principal Investigator (Co-PI) of the Laboratory",
+			"affiliations": "Assistant Research Fellow at the Big Data Center, National Children’s Medical Center, Beijing Children’s Hospital affiliated with Capital Medical University.",
+			"education": "Ph.D. in Epidemiology and Health Statistics from Tianjin Medical University.",
+			"professional_title": "",
+			"research_focus": "Research Focus: Neuro-psychological developmental disorders and mental health in children and adolescents; cognitive behavior and mental health cohorts in children and adolescents; medical research design, big data mining.",
+			"email": ""
+		}
+	},
+	{
+		"position": 4,
+		"CN": {
+			"avatar": "0003.png",
+			"name": "赵荣江",
+			"title": "",
+			"affiliations": "首都医科大学附属北京儿童医院",
+			"education": "硕士研究生，精神病与精神卫生学，新疆医科大学",
+			"professional_title": "专业职称：副主任医师",
+			"research_focus": "主要研究方向：精神疾病的药物干预；青少年情感障碍及心理健康   ",
+			"email": "zhaorongjiang5@163.com"
+		},
+		"EN": {
+			"avatar": "0003.png",
+			"name": "Zhao Rongjiang",
+			"title": "",
+			"affiliations": "Affiliation: Beijing Children's Hospital affiliated with Capital Medical University",
+			"education": "Education: Master's degree, Psychiatry and Mental Health, Xinjiang Medical University",
+			"professional_title": "Professional Title: Associate Chief Physician",
+			"research_focus": "Main Research Areas: Pharmacological interventions in psychiatric diseases; emotional disorders and mental health in adolescents",
+			"email": "zhaorongjiang5@163.com"
+		}
+	},
+	{
+		"position": 4,
+		"CN": {
+			"avatar": "0004.png",
+			"name": "胡娜",
+			"title": "",
+			"affiliations": "单位：首都医科大学附属北京儿童医院",
+			"education": "硕士研究生，心理学，四川大学",
+			"professional_title": "专业职称：主治医师",
+			"research_focus": "主要研究方向：精神疾病的非药物干预；青少年情感障碍及心理健康      ",
+			"email": "foxlehu@163.com"
+		},
+		"EN": {
+			"avatar": "0004.png",
+			"name": "Hu Na",
+			"title": "",
+			"affiliations": "Affiliation: Beijing Children's Hospital affiliated with Capital Medical University",
+			"education": "Education: Master's degree, Psychology, Sichuan University",
+			"professional_title": "Professional Title: Attending Physician",
+			"research_focus": "Main Research Areas: Non-pharmacological interventions in psychiatric diseases; emotional disorders and mental health in adolescents",
+			"email": "foxlehu@163.com"
+		}
+	},
+	{
+		"position": 4,
+		"CN": {
+			"avatar": "0005.png",
+			"name": "柴佳宝",
+			"title": "",
+			"affiliations": "单位：北京回龙观医院",
+			"education": "硕士研究生，精神心理专业，日本佐贺大学医学系",
+			"professional_title": "专业职称：中级心理治疗师",
+			"research_focus": "主要研究方向：精神分裂症的自我污名、儿童青少年（早发）精神疾病的识别干预与康复      ",
+			"email": "chaijiabao1988@126.com"
+		},
+		"EN": {
+			"avatar": "0005.png",
+			"name": "Chai Jiabao",
+			"title": "",
+			"affiliations": "Affiliation: Beijing Hui Long Guan Hospital",
+			"education": "Education: Master's degree, Mental Health, Saga University, Japan",
+			"professional_title": "Professional Title: Intermediate Psychotherapist",
+			"research_focus": "Main Research Areas: Self-stigma in schizophrenia; identification, intervention, and rehabilitation of early-onset mental illnesses in children and adolescents",
+			"email": ""
+		}
+	},
+	{
+		"position": 4,
+		"CN": {
+			"avatar": "0006.png",
+			"name": "王红",
+			"title": "",
+			"affiliations": "单位：北京回龙观医院",
+			"education": "硕士研究生，精神卫生专业，中南大学湘雅医学院。",
+			"professional_title": "专业职称：主治医师",
+			"research_focus": "主要研究方向：儿童青少年抑郁症的干预、儿童强迫症的共病及干预。      ",
+			"email": "whong666@163.com"
+		},
+		"EN": {
+			"avatar": "0006.png",
+			"name": "Wang Hong",
+			"title": "",
+			"affiliations": "Affiliation: Beijing Hui Long Guan Hospital",
+			"education": "Education: Master's degree, Mental Health, Xiangya School of Medicine, Central South University",
+			"professional_title": "Professional Title: Attending Physician",
+			"research_focus": "Main Research Areas: Interventions in adolescent depression; comorbidity and interventions in childhood OCD",
+			"email": ""
+		}
+	},
+	{
+		"position": 4,
+		"CN": {
+			"avatar": "0007.png",
+			"name": "苏荣坤",
+			"title": "",
+			"affiliations": "单位：沈阳市精神卫生中心",
+			"education": "硕士研究生，应用心理学专业，中国医科大学。",
+			"professional_title": "专业职称：心理治疗师",
+			"research_focus": "主要研究方向：儿童青少年心理卫生、人格社会文化机制。      ",
+			"email": "srkun568@126.com"
+		},
+		"EN": {
+			"avatar": "0007.png",
+			"name": "Su Rongkun",
+			"title": "",
+			"affiliations": "Affiliation: Shenyang Mental Health Center",
+			"education": "Education: Master's degree, Applied Psychology, China Medical University",
+			"professional_title": "Professional Title: Psychotherapist",
+			"research_focus": "Main Research Areas: Mental health in children and adolescents; personality and socio-cultural mechanisms",
+			"email": ""
+		}
+	},
+	{
+		"position": 4,
+		"CN": {
+			"avatar": "0008.png",
+			"name": "黄玲英",
+			"title": "",
+			"affiliations": "单位：福建医科大学附属第一医院",
+			"education": "硕士，儿科学，福建医科大学。",
+			"professional_title": "专业职称：儿科住院医师。",
+			"research_focus": "主要研究方向：儿童青少年心理健康      ",
+			"email": "srkun568@126.com"
+		},
+		"EN": {
+			"avatar": "0008.png",
+			"name": "Huang Lingying",
+			"title": "",
+			"affiliations": "Affiliation: The First Affiliated Hospital of Fujian Medical University",
+			"education": "Education: Master's degree, Pediatrics, Fujian Medical University",
+			"professional_title": "Professional Title: Pediatric Resident",
+			"research_focus": "Main Research Areas: Mental health in children and adolescents",
+			"email": ""
+		}
+	},
+	{
+		"position": 3,
+		"CN": {
+			"avatar": "0009.png",
+			"name": "梁连静怡",
+			"title": "",
+			"affiliations": "",
+			"education": "山东第二医科大学硕士（在读）；应用心理学专业。",
+			"professional_title": "",
+			"research_focus": "主要研究方向：儿童青少年心理健康",
+			"email": ""
+		},
+		"EN": {
+			"avatar": "0009.png",
+			"name": "Liang Lianjingyi",
+			"title": "",
+			"affiliations": "",
+			"education": "Education: Master’s candidate in Applied Psychology at Shandong Second Medical University",
+			"professional_title": "",
+			"research_focus": "Main Research Areas: Mental health in children and adolescents",
+			"email": ""
+		}
+	},
+	{
+		"position": 3,
+		"CN": {
+			"avatar": "0010.png",
+			"name": "孙秀丽",
+			"title": "",
+			"affiliations": "",
+			"education": "山东第二医科大学硕士（在读）；应用心理学专业。",
+			"professional_title": "",
+			"research_focus": "主要研究方向：儿童青少年心理健康",
+			"email": ""
+		},
+		"EN": {
+			"avatar": "0010.png",
+			"name": "Sun Xiuli",
+			"title": "",
+			"affiliations": "",
+			"education": "Education: Master’s candidate in Applied Psychology at Shandong Second Medical University",
+			"professional_title": "",
+			"research_focus": "Main Research Areas: Mental health in children and adolescents",
+			"email": ""
+		}
+	},
+	{
+		"position": 3,
+		"CN": {
+			"avatar": "0011.png",
+			"name": "李昕然 Stephanie",
+			"title": "",
+			"affiliations": "单位：University of North Carolina at Chapel Hill",
+			"education": "最高学历、专业及学校：本科，Psychology B.S.(心理学理学学士）; Human development & family Sciences B.A.Ed. （人类发展和家庭科学 教育学文学学士）",
+			"professional_title": "专业职称：科研助理",
+			"research_focus": "主要研究方向：儿童青少年心理健康；早年逆境对大脑理性和情绪调节的影响; 心理教育测试和文化适应对学生的影响",
+			"email": ""
+		},
+		"EN": {
+			"avatar": "0011.png",
+			"name": "Stephanie Li Xinran",
+			"title": "",
+			"affiliations": "Affiliation: University of North Carolina at Chapel Hill",
+			"education": "Education: Bachelor of Science in Psychology (B.S.); Bachelor of Arts in Education for Human Development & Family Sciences (B.A.Ed.)",
+			"professional_title": "Professional Title: Research Assistant",
+			"research_focus": "Main Research Areas: Mental health in children and adolescents; the impact of early adversity on brain rationality and emotional regulation; the effects of psychoeducational testing and cultural adaptation on students",
+			"email": ""
+		}
+	},
+	{
+		"position": 5,
+		"CN": {
+			"avatar": "0012.png",
+			"name": "洪煦",
+			"title": "",
+			"affiliations": "单位：电科云（北京）科技有限公司",
+			"education": "最高学历、专业及学校：学士，国际政治专业，北京第二外国语学院。",
+			"professional_title": "专业职称：工程师",
+			"research_focus": "主要研究方向：数字心理健康、数据智能产品。",
+			"email": ""
+		},
+		"EN": {
+			"avatar": "0012.png",
+			"name": "Hong Xu",
+			"title": "",
+			"affiliations": "Affiliation: Cloud Services Innovation Laboratory，China Electronics Technology Group Corporation",
+			"education": "Bachelor’s degree in International Politics from Beijing Second Foreign Language Institute",
+			"professional_title": "Professional Title: Engineer",
+			"research_focus": "Main Research Areas: Digital mental health, data intelligence products.",
+			"email": ""
+		}
+	}
+]

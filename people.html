@@ -6,12 +6,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="modinatheme">
-        <meta name="description" content="Oraxis - Architecture & Interior Html Template">
+        <meta name="author" content="严超">
+        <meta name="description" content="情感神经科学与发展心理病理实验室">
         <!-- ======== Page title ============ -->
         <title>情感神经科学与发展心理病理实验室</title>
         <!--<< Favicon >>-->
         <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <!-- element-plus -->
+        <link href="https://cdn.bootcdn.net/ajax/libs/element-plus/2.3.12/index.css" rel="stylesheet">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--<< Font Awesome.css >>-->
@@ -22,51 +24,47 @@
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <!--<< MeanMenu.css >>-->
         <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!--<< Swiper Bundle.css >>-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
-        <!--<< Style.css >>-->
-        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-
         <!-- Back To Top Start -->
         <div class="scroll-up">
             <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
             </svg>
         </div>
-        
+
         <!-- Preloader Start -->
         <div id="preloader" class="preloader">
             <div class="animation-preloader">
                 <div class="spinner">                
                 </div>
                 <div class="txt-loading">
+                    <span data-text-preloader="C" class="letters-loading">
+                        C
+                    </span>
                     <span data-text-preloader="A" class="letters-loading">
                         A
-                    </span>
-                    <span data-text-preloader="N" class="letters-loading">
-                        N
-                    </span>
-                    <span data-text-preloader="D" class="letters-loading">
-                        D
                     </span>
                     <span data-text-preloader="P" class="letters-loading">
                         P
                     </span>
+                    <span data-text-preloader="M" class="letters-loading">
+                        M
+                    </span>
+                    <span data-text-preloader="H" class="letters-loading">
+                        H
+                    </span>
                     <span data-text-preloader="L" class="letters-loading">
                         L
                     </span>
-                    <span data-text-preloader="A" class="letters-loading">
-                        A
+                    <span data-text-preloader="a" class="letters-loading">
+                        a
                     </span>
-                    <span data-text-preloader="B" class="letters-loading">
-                        B
+                    <span data-text-preloader="b" class="letters-loading">
+                        b
                     </span>
                 </div>
                 <p class="text-center">Loading...</p>
@@ -97,7 +95,7 @@
                         <div class="offcanvas__top mb-4 d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
                                 <a href="index.html">
-                                    <img src="assets/img/logo/header-logo.svg" alt="logo-img">
+                                    <img src="assets/img/logo/logo.png" alt="logo-img" style="display: block; width: 200px; height: 55px;">
                                 </a>
                             </div>
                             <div class="offcanvas__close">
@@ -109,17 +107,25 @@
 
                         <div class="mobile-menu fix mb-3"></div>
                         <p class="text d-none d-xl-block mb-5">
-                            Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                            儿童青少年精神疾病与心理健康研究室（Child and Adolescent Psychiatry& Mental Health Laboratory）
                         </p>
                         <div class="offcanvas__contact">
-                            <h4>Contact Info</h4>
+                            <h4 i18n="CONTACT"></h4>
                             <ul>
                                 <li class="d-flex align-items-center">
                                     <div class="offcanvas__contact-icon">
                                         <i class="fal fa-map-marker-alt"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                        北京市西城区南礼士56号，北京儿童医院
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        -
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center">
@@ -127,15 +133,7 @@
                                         <i class="fal fa-envelope"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a href="mailto:info@azent.com"><span class="mailto:info@azent.com">info@oraxis.com</span></a>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fal fa-clock"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                        <a href="mailto:liying@bch.com.cn"><span class="mailto:liying@bch.com.cn">liying@bch.com.cn</span></a>
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center">
@@ -143,21 +141,10 @@
                                         <i class="far fa-phone"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a href="tel:+11002345909">+11002345909</a>
+                                        <a href="tel:010-5961XXXX">010-5961XXXX</a>
                                     </div>
                                 </li>
                             </ul>
-                            <div class="header-button mt-4">
-                                <a href="contact.html" class="theme-btn text-center">
-                                    Contact Us
-                                </a>
-                            </div>
-                            <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,7 +153,7 @@
         <div class="offcanvas__overlay"></div>
 
         <!-- Header Area Start -->
-        <header>
+        <header class="g-header">
             <div id="header-sticky" class="header-1 header-3">
                 <div class="container-fluid">
                     <div class="mega-menu-wrapper">
@@ -177,7 +164,7 @@
                                         <img 
                                             src="assets/img/logo/logo.png" 
                                             alt="logo-img" 
-                                            style="display: block; width: 200px; height: 72px;"
+                                            style="display: block; width: 200px; height: 55px;"
                                         />
                                    </a>
                                 </div>
@@ -245,70 +232,116 @@
         <!-- Team Section Start -->
         <section class="team-section section-padding fix">
             <div class="container">
-                <div class="row">
-                    <div class="wow fadeInUp">
-                        <div class="team-card-items style-1">
+                <div class="row" id="peopleContainer">
+                    <div id="app">
+                        <div style="margin-bottom: 20px;display: flex; justify-content: flex-end;">
+                            <el-select
+                                v-model="curretPosition"
+                                placeholder="Select"
+                                size="large"
+                                style="margin-bottom: 40px;"
+                            >
+                                <el-option
+                                    v-for="item in options"
+                                    :key="item.value"
+                                    :label="item.label"
+                                    :value="item.value"
+                                />
+                            </el-select>
+                        </div>
+
+                        <div 
+                            v-for="(item, index) in filterList" 
+                            :key="item.name + item.avatar + index" 
+                            class="team-card-items style-1"
+                            :style="{
+                                marginBottom: index === filterList.length - 1 
+                                    ? 0
+                                    : (((index < filterList.length - 1) && item.position !== filterList[index + 1].position) ? '80px' : '40px')
+                            }"
+                        >
+                            <h3 
+                                v-if="index === 0 || item.position !== filterList[index -1].position" 
+                                style="position: absolute; top: -40px; user-select: none; line-height: 20px;"
+                            >     
+                                {{options[item.position].label}}
+                            </h3>
+
                             <div class="team-image">
-                                <img src="assets/img/team/11.jpg" alt="team-img">
+                                <img :src="'people/' + item.avatar" alt="team-img">
                             </div>
+             
                             <div class="team-content">
-                                <h3>Cooper</h3>
-                                <p>Design Expert</p>
+                                <h3>{{item.name}}</h3>
+                                <p>{{item.title}}</p>
+                                <p>{{item.affiliations}}</p>
+                                <p>{{item.education}}</p>
+                                <p>{{item.research_focus}}</p>
+                                <p>{{item.email}}</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp">
-                        <div class="team-card-items style-2">
-                            <div class="team-image">
-                                <img src="assets/img/team/11.jpg" alt="team-img">
-                            </div>
-                            <div class="team-content">
-                                <h3>Cooper</h3>
-                                <p>Design Expert</p>
-                            </div>
-                        </div>
+
+                        <el-empty v-if="filterList.length === 0" :description="CURRENT_LANG === 'EN'?'empty':'暂无内容'" />
                     </div>
                 </div>
             </div>
         </section>
-
+       
         <!-- Footer Section Start -->
         <footer class="footer-section section-bg-2">
             <div class="container">
                 <div class="footer-widgets-wrapper style-1">
                     <div class="row">
-                        <div class="col-xl-4 col-lg-12 col-md-12 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="col-xl-4 col-lg-12 col-md-12 wow fadeInUp">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
                                     <img 
                                         src="assets/img/logo/logo.png" 
                                         alt="logo-img"
-                                        style="display: block; width: 200px; height: 72px;"
+                                        style="display: block; width: 200px; height: 55px;"
                                     />
                                 </div>
                                 <div class="footer-content">
                                     <p>
-                                        情感神经科学与发展心理病理实验室（Affective Neuroscience & Developmental Psychopathology Laboratory）
+                                        儿童青少年精神疾病与心理健康研究室（Child and Adolescent Psychiatry& Mental Health Laboratory）
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="col-xl-4 col-lg-6 col-md-12 wow fadeInUp">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
                                     <h3 i18n="Links"></h3>
                                 </div>
                                 <ul class="list-items">
                                     <li>
-                                        <a href="https://psy.ecnu.edu.cn/" target="_blank">
+                                        <a href="https://www.andplab.com.cn" target="_blank">
                                             <i class="fas fa-chevron-right"></i>
-                                            华东师范大学心理与认知科学学院
+                                            严超师兄课题组
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.hudenglab.com" target="_blank">
+                                            <i class="fas fa-chevron-right"></i>
+                                            邓虎课题组
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" target="_blank">
+                                            <i class="fas fa-chevron-right"></i>
+                                            陈楚侨课题组
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.bch.com.cn/Html/Index.html" target="_blank">
+                                            <i class="fas fa-chevron-right"></i>
+                                            北京儿童医院心身医学科
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="col-xl-4 col-lg-6 col-md-12 wow fadeInUp">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
                                     <h3 i18n="CONTACT"></h3>
@@ -321,7 +354,7 @@
                                             </div>
                                             <div class="content">
                                                 <p i18n="LaboratoryAddress"></p>
-                                                <h4>华东师范大学俊秀楼405室</h4>
+                                                <h4>北京市西城区南礼士56号，北京儿童医院</h4>
                                             </div>
                                         </div>
                                         <div class="contact-items">
@@ -330,7 +363,7 @@
                                             </div>
                                             <div class="content">
                                                 <p i18n="OfficeAddress"></p>
-                                                <h4>华东师范大学俊秀楼412室</h4>
+                                                <h4>-</h4>
                                             </div>
                                         </div>
                                         <div class="contact-items">
@@ -339,7 +372,7 @@
                                             </div>
                                             <div class="content">
                                                 <p i18n="OfficePhone"></p>
-                                                <h4><a href="tel:86-021-62230119">86-021-62230119</a></h4>
+                                                <h4><a href="tel:010-5961XXXX">010-5961XXXX</a></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -357,14 +390,8 @@
         <script src="assets/js/viewport.jquery.js"></script>
         <!--<< Bootstrap Js >>-->
         <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!--<< Nice Select Js >>-->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!--<< Waypoints Js >>-->
-        <script src="assets/js/jquery.waypoints.js"></script>
         <!--<< Counterup Js >>-->
         <script src="assets/js/jquery.counterup.min.js"></script>
-        <!--<< Swiper Slider Js >>-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
         <!--<< MeanMenu Js >>-->
         <script src="assets/js/jquery.meanmenu.min.js"></script>
         <!--<< Magnific Popup Js >>-->
@@ -375,5 +402,58 @@
          <script src="assets/js/jquery.i18n.properties.min.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.3.4/vue.global.prod.min.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/element-plus/2.3.12/index.full.min.js"></script>
+
+        <script>
+            const HelloVueApp = {
+                data() {
+                    return {
+                        CURRENT_LANG: window.localStorage.getItem('CURRENT_LANG') === 'EN' ? 'EN' : 'CN',
+                        list: [],
+                        curretPosition: 0,
+                        options: [
+                            { label: '全部', value: 0, },
+                            { label: 'PI', value: 1, },
+                            { label: '博士后', value: 2, },
+                            { label: '研究生团队', value: 3, },
+                            { label: '医生团队', value: 4, },
+                            { label: '工程师', value: 5, },
+                        ]
+                    }
+                },
+                computed: {
+                    filterList() {
+                        return this.list.filter(item => this.curretPosition === 0 ? true : item.position === this.curretPosition)
+                    }
+                },
+                created() {
+                    this.loadList();
+                },
+                methods: {
+                    loadList() {
+                        $.ajax({
+                            url: 'people/data.json',
+                            method: 'GET',
+                            success:(res) => {
+                                var CURRENT_LANG = window.localStorage.getItem('CURRENT_LANG') === 'EN' ? 'EN' : 'CN';
+                                
+                                this.list = res.sort((a,b)=> a.position - b.position).map(item => {
+                                    const res = item[CURRENT_LANG] || item.CN;
+
+                                    return {
+                                        ...res,
+                                        position: item.position,
+                                        
+                                    }
+                                });
+                            }
+                        })
+                    }
+                }
+            }
+
+            Vue.createApp(HelloVueApp).use(ElementPlus).mount('#app');
+        </script>
     </body>
 </html>

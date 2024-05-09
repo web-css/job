@@ -89,9 +89,6 @@
         //>> Wow Animation Start <<//
         new WOW().init();
 
-        //>> Nice Select Start <<//
-        $('select').niceSelect();
-
          //>> Scroll Js Start <<//
          const scrollPath = document.querySelector(".scroll-up path");
          const pathLength = scrollPath.getTotalLength();
