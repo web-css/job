@@ -26,6 +26,31 @@
         <link rel="stylesheet" href="assets/css/meanmenu.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
+
+        <style>
+            .publication-items {
+                position: relative;
+            }
+
+            .publication-items__link {
+                display: block;
+                padding: 12px 20px;
+                background-color: var(--bg);
+                border-radius: 2px;
+                line-height: 40px;
+            }
+
+            .publication-items__link .fal {
+                color: var(--theme);
+                font-weight: bold;
+                margin-right: 4px;
+            }
+
+            .publication-items__link:hover {
+                color: var(--theme);
+                box-shadow: var(--bs-box-shadow-sm);
+            }
+        </style>
     </head>
 
     <body>
@@ -252,34 +277,28 @@
                             <div 
                                 v-for="(item, index) in filterList" 
                                 :key="item.title" 
-                                class="single-blog-post"
+                                class="publication-items"
                                 :style="{
                                     marginBottom: index === filterList.length - 1 
                                         ? 0
-                                        : (((index < filterList.length - 1) && item.year !== filterList[index + 1].year) ? '80px' : '40px')
+                                        : (((index < filterList.length - 1) && item.year !== filterList[index + 1].year) ? '60px' : '20px')
                                 }"
                             >
                                 <h3 
                                     v-if="index === 0 || item.year !== filterList[index -1].year" 
                                     style="position: absolute; top: -40px; user-select: none; line-height: 20px;"
                                 >     
-                                    {{item.year}}年
+                                    {{item.year}}年{{item.year === 2019?'以前':''}}
                                 </h3>
-                                <div 
-                                    class="post-featured-thumb bg-cover" 
-                                    :style="{backgroundImage: `url(publication/${item.cover})`}"
-                                >
-                                
-                                </div>
-                                <div class="post-content">
-                                    <p class="post-meta">
-                                        <i class="fal fa-angle-double-right"></i>&nbsp;
-                                        <a :href="item.link" target="_blank">{{item.title}}</a>
-                                    </p>
-                                    <div class="post-meta">
-                                        <i class="fal fa-angle-double-right"></i>&nbsp;{{item.authors}}
+
+                                <a target="_blank" :href="item.link" class="publication-items__link">
+                                    <div>
+                                        <i class="fal fa-angle-double-right"></i>&nbsp;{{item.title}}
                                     </div>
-                                </div>
+                                    <div>
+                                        <i class="fal fa-user"></i>&nbsp;{{item.authors}}
+                                    </div>
+                                </a>
                             </div>
 
                             <el-empty v-if="filterList.length === 0" :description="CURRENT_LANG === 'EN'?'empty':'暂无内容'" />
@@ -413,7 +432,7 @@
                 data() {
                     const year = new Date().getFullYear();
                     const yearList = [];
-                    for (let i = 2024; i <= year; i++) {
+                    for (let i = 2020; i <= year; i++) {
                         yearList.push(i);
                     }
                     return {
@@ -424,7 +443,8 @@
                             { label: '全部', value: 0, },
                             ...yearList.reverse().map(item => ({
                                 label: item + '年', value: item,
-                            }))
+                            })),
+                            { label: '2019年以前', value: 2019, },
                         ]
                     }
                 },
