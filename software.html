@@ -12,8 +12,6 @@
         <title>儿童青少年精神疾病与心理健康研究室</title>
         <!--<< Favicon >>-->
         <link rel="shortcut icon" href="assets/img/favicon.ico">
-        <!-- element-plus -->
-        <link href="https://cdn.bootcdn.net/ajax/libs/element-plus/2.3.12/index.css" rel="stylesheet">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--<< Font Awesome.css >>-->
@@ -26,34 +24,10 @@
         <link rel="stylesheet" href="assets/css/meanmenu.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
-
-        <style>
-            .publication-items {
-                position: relative;
-            }
-
-            .publication-items__link {
-                display: block;
-                padding: 12px 20px;
-                background-color: var(--bg);
-                border-radius: 2px;
-                line-height: 40px;
-            }
-
-            .publication-items__link .fal {
-                color: var(--theme);
-                font-weight: bold;
-                margin-right: 4px;
-            }
-
-            .publication-items__link:hover {
-                color: var(--theme);
-                box-shadow: var(--bs-box-shadow-sm);
-            }
-        </style>
     </head>
 
     <body>
+
         <!-- Back To Top Start -->
         <div class="scroll-up">
             <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -198,16 +172,16 @@
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li>
-                                                    <a href="index.html" i18n="HOME"></a>
+                                                    <a  href="index.html" i18n="HOME"></a>
                                                 </li>
                                                 <li>
                                                     <a href="people.html" i18n="PEOPLE"></a>
                                                 </li>
                                                 <li>
-                                                    <a href="javascript:void(0);" class="active" i18n="PUBLICATIONS"></a>
+                                                    <a href="publication.html" i18n="PUBLICATIONS"></a>
                                                 </li>
                                                 <li>
-                                                    <a href="software.html" i18n="SOFTWARE"></a>
+                                                    <a href="javascript:void(0);"  class="active"  i18n="SOFTWARE"></a>
                                                 </li>
                                                 <li>
                                                     <a href="news.html" i18n="NEWS"></a>
@@ -239,75 +213,27 @@
 
         <!--<< Breadcrumb Section Start >>-->
         <div class="breadcrumb-wrapper section-padding bg-cover" style="height: 360px; background-image: url('assets/img/breadcrumb-02.jpeg');">
-            <div class="container">
-                <div class="page-heading">
-                    <h1 class="wow fadeInUp" data-wow-delay=".3s" i18n="PUBLICATIONS"></h1>
-                    <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-                        <li>
-                            <a href="index.html" i18n="HOME"></a>
-                        </li>
-                        <li>
-                            <i class="fas fa-chevron-right"></i>
-                        </li>
-                        <li i18n="PUBLICATIONS">
-                        </li>
-                    </ul>
-                </div>
-            </div>
+					<div class="container">
+						<div class="page-heading">
+								<h1 class="wow fadeInUp" data-wow-delay=".3s" i18n="SOFTWARE"></h1>
+								<ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+										<li>
+												<a href="index.html" i18n="HOME">
+												</a>
+										</li>
+										<li>
+												<i class="fas fa-chevron-right"></i>
+										</li>
+										<li i18n="SOFTWARE" >
+										</li>
+								</ul>
+						</div>
+					</div>
         </div>
-
-        <!--<< Blog Wrapper Here >>-->
-        <section class="blog-wrapper news-wrapper section-padding">
-            <div class="container">
-                <div class="news-area">
-                    <div class="row">
-                        <div id="app">
-                            <div style="margin-bottom: 20px;display: flex; justify-content: flex-end;">
-                                <el-select
-                                    v-model="curretYear"
-                                    placeholder="Select"
-                                    size="large"
-                                    style="margin-bottom: 40px;"
-                                >
-                                    <el-option
-                                        v-for="item in options"
-                                        :key="item.value"
-                                        :label="item.label"
-                                        :value="item.value"
-                                    />
-                                </el-select>
-                            </div>
-                            <div 
-                                v-for="(item, index) in filterList" 
-                                :key="item.title" 
-                                class="publication-items"
-                                :style="{
-                                    marginBottom: index === filterList.length - 1 
-                                        ? 0
-                                        : (((index < filterList.length - 1) && item.year !== filterList[index + 1].year) ? '60px' : '20px')
-                                }"
-                            >
-                                <h3 
-                                    v-if="index === 0 || item.year !== filterList[index -1].year" 
-                                    style="position: absolute; top: -40px; user-select: none; line-height: 20px;"
-                                >     
-                                    {{item.year}}年{{item.year === 2019?'以前':''}}
-                                </h3>
-
-                                <a target="_blank" :href="item.link" class="publication-items__link">
-                                    <div>
-                                        <i class="fal fa-angle-double-right"></i>&nbsp;{{item.title}}
-                                    </div>
-                                    <div>
-                                        <i class="fal fa-user"></i>&nbsp;{{item.authors}}
-                                    </div>
-                                </a>
-                            </div>
-
-                            <el-empty v-if="filterList.length === 0" :description="CURRENT_LANG === 'EN'?'empty':'暂无内容'" />
-                        </div>
-                    </div>
-                </div>
+        
+        <!-- Contact Info Section Start -->
+        <section class="section-padding fix">
+            <div id="homeContainer" class="container" style="line-height: 40px; font-size: 18px; text-indent: 2em;">
             </div>
         </section>
        
@@ -408,80 +334,34 @@
             </div>
         </footer>
 
-         <!--<< All JS Plugins >>-->
-         <script src="assets/js/jquery-3.7.1.min.js"></script>
-         <!--<< Viewport Js >>-->
-         <script src="assets/js/viewport.jquery.js"></script>
-         <!--<< Bootstrap Js >>-->
-         <script src="assets/js/bootstrap.bundle.min.js"></script>
-         <!--<< Counterup Js >>-->
-         <script src="assets/js/jquery.counterup.min.js"></script>
-         <!--<< MeanMenu Js >>-->
-         <script src="assets/js/jquery.meanmenu.min.js"></script>
-         <!--<< Magnific Popup Js >>-->
-         <script src="assets/js/jquery.magnific-popup.min.js"></script>
-         <!--<< Wow Animation Js >>-->
-         <script src="assets/js/wow.min.js"></script>
-        <!-- 多语言 -->
-        <script src="assets/js/jquery.i18n.properties.min.js"></script>
+        <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Viewport Js >>-->
+        <script src="assets/js/viewport.jquery.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Counterup Js >>-->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+         <!-- 多语言 -->
+         <script src="assets/js/jquery.i18n.properties.min.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
-        <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.3.4/vue.global.prod.min.js"></script>
-        <script src="https://cdn.bootcdn.net/ajax/libs/element-plus/2.3.12/index.full.min.js"></script>
-
 
         <script>
-            const HelloVueApp = {
-                data() {
-                    const year = new Date().getFullYear();
-                    const yearList = [];
-                    for (let i = 2020; i <= year; i++) {
-                        yearList.push(i);
-                    }
-                    return {
-                        CURRENT_LANG: window.localStorage.getItem('CURRENT_LANG') === 'EN' ? 'EN' : 'CN',
-                        list: [],
-                        curretYear: 0,
-                        options: [
-                            { label: '全部', value: 0, },
-                            ...yearList.reverse().map(item => ({
-                                label: item + '年', value: item,
-                            })),
-                            { label: '2019年以前', value: 2019, },
-                        ]
-                    }
-                },
-                computed: {
-                    filterList() {
-                        return this.list.filter(item => this.curretYear === 0 ? true : item.year === this.curretYear)
-                    }
-                },
-                created() {
-                    this.loadList();
-                },
-                methods: {
-                    loadList() {
-                        $.ajax({
-                            url: 'publication/data.json',
-                            method: 'GET',
-                            success:(res) => {
-                                var CURRENT_LANG = window.localStorage.getItem('CURRENT_LANG') === 'EN' ? 'EN' : 'CN';
-                                
-                                this.list = res.sort((a,b)=> b.year - a.year).map(item => {
-                                    const res = item[CURRENT_LANG] || item.CN;
-
-                                    return {
-                                        ...res,
-                                        year: item.year,
-                                    }
-                                });
-                            }
-                        })
-                    }
+            $(document).ready( function() {
+                // 根据语言设置显示内容
+                if (window.localStorage.getItem('CURRENT_LANG') === 'EN') {
+                    $('#homeContainer').append(`<p>1. Neuropsychological Test of Inhibitory Function V1.0 (Software Copyright 2022SR0940534)</p><p>2. Children's Social Skills Assessment System V1.0 (Software Copyright 2022SR0940542)</p><p>3. Psy-Behavior Collection System V1.0 (Software Copyright 2022SR1575651)</p><p>4. Psy-Video Collection System V1.0 (Software Copyright 2022SR1575546)</p><p>5. ADHD Clinical Assessment System V1.0 (Software Copyright 2023SR0869900)</p><p>6. ASD Clinical Assessment System V1.0 (Software Copyright 2023SR0872045)</p><p>7. Multi-Scenario Self-Service Digital Mindfulness Intervention Cloud Platform V1.0 (Software Copyright 2023SR0869757)</p><p>8. Children's Mental Health Smart Digital Cloud Platform V1.0 (Software Copyright 2022SR0940525)</p><p>9. Brain Development Disorder Assessment System V1.0 (Software Copyright 2022SR1534306)</p><p>10. Primary and Secondary School Mental Health Screening and Assessment Cloud Platform V1.0 (Software Copyright 2023SR0869901)</p><p style="font-weight: bold;">Forms of External Collaboration for the Systems:</p><p>1. For Hospital Settings: Data collection platforms for scales, neuropsychological tests, and general surveys. Available for use by research groups primarily conducting subject data collection in hospitals, with the ability to automatically export data in an analyzable format. Currently, the system contains over 100 scales and neuropsychological tests, and discussions on platform usage are welcome.</p><p>2. For School Platforms: Data collection platforms for scales, neuropsychological tests, and general surveys. Specifically aimed at research groups conducting studies and data collection in school settings. The system currently contains over 100 scales and neuropsychological tests, and discussions on platform usage are welcome.</p><p>For applications to use the developed platform software systems, please contact Li Ying via email at liying@bch.com.cn.</p>`)
+                } else {
+                    $('#homeContainer').append('<p>1. 抑制功能的神经心理测试V1.0（软著2022SR0940534）</p><p>2. 儿童社交能力评估系统V1.0（软著2022SR0940542）</p><p>3. Psy-Behavior采集系统V1.0（软著2022SR1575651）</p><p>4. Psy-Video采集系统V1.0（软著2022SR1575546）</p><p>5. ADHD临床评估系统V1.0（软著2023SR0869900）</p><p>6. ASD临床评估系统V1.0（软著2023SR0872045）</p><p>7. 多场景自助式数字正念干预云平台V1.0（软著2023SR0869757）</p><p>8. 儿童心理健康智能数字化云平台V1.0（软著2022SR0940525）</p><p>9. 脑发育障碍评估系统V1.0（软著2022SR1534306）</p><p>10. 中小学心理健康筛查评估云平台V1.0（软著2023SR0869901）</p><p style="font-weight: bold;">系统对外合作开放形式：</p><p>1. 基于医院场景的数据采集平台使用：量表、神经心理测试、一般情况调查；基于主要在医院进行被试数据采集的课题组开放使用，可自动导出分析格式的原始数据，目前系统中的量表及神经心理测试合计数量达到100以上，欢迎洽谈平台使用。</p><p>2. 基于学校平台进行数据采集：量表、神经心理测试、一般情况调查。基于学校场景的数据采集平台，主要针对在学校开展研究和数据采集的课题组，目前系统中的量表及神经心理测试合计数量达到100以上，欢迎洽谈平台使用。</p><p>对于研发的平台软件系统的应用申请，请邮件联系李瑛liying@bch.com.cn。</p>')
                 }
-            }
-
-            Vue.createApp(HelloVueApp).use(ElementPlus).mount('#app');
+            });
         </script>
     </body>
 </html>

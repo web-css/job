@@ -1089,7 +1089,7 @@ input.main-search-input::placeholder {
 .header-1 .mega-menu-wrapper .header-main .header-left {
   display: flex;
   align-items: center;
-  gap: 90px;
+  gap: 50px;
 }
 @media (max-width: 1200px) {
   .header-1 .mega-menu-wrapper .header-main .header-left {
