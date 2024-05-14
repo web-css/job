@@ -296,10 +296,10 @@
 
                                 <a target="_blank" :href="item.link" class="publication-items__link">
                                     <div>
-                                        <i class="fal fa-angle-double-right"></i>&nbsp;{{item.title}}
+                                        <i class="fal fa-angle-double-right"></i>&nbsp; {{item.title}}
                                     </div>
                                     <div>
-                                        <i class="fal fa-user"></i>&nbsp;{{item.authors}}
+                                        <i class="fal fa-user"></i>&nbsp;<span v-html="item.authors"></span>
                                     </div>
                                 </a>
                             </div>
@@ -359,7 +359,7 @@
                                     <li>
                                         <a href="https://www.bch.com.cn/Html/Index.html" target="_blank">
                                             <i class="fas fa-chevron-right"></i>
-                                            北京儿童医院心身医学科
+                                            北京儿童医院官网
                                         </a>
                                     </li>
                                 </ul>
