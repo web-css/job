@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京儿童医学心身医学疾病谱</title>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        @charset 'utf-8';
+
+        /*这些元素都建议重新初始化*/
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        tr,
+        td,
+        th,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        br,
+        img,
+        table,
+        input,
+        form,
+        a,
+        p,
+        textarea {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, 'Microsoft YaHei', '宋体';
+        }
+
+        /*去掉列表默认排列*/
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        /*去掉底部横线，把a元素更改设置成块级元素*/
+        a {
+            text-decoration: none;
+            display: block;
+        }
+
+        /*img标签要清除border以及display设为block设置为块级元素，默认为display:inline;存在下边线多出4px状况，所以一般设为block*/
+        img {
+            border: 0;
+            display: block;
+        }
+
+        /*清除浮动破坏带来的塌陷问题*/
+        /*清除浮动的兼容IE*/
+        .clearfloat {
+            zoom: 1;
+        }
+
+        .clearfloat:after {
+            display: block;
+            clear: both;
+            content: "";
+            visibility: hidden;
+            height: 0;
+        }
+
+        html {
+            height: 100%;
+            background-image: linear-gradient(180deg, #C7AEF7 0%, #567DE6 100%);
+            background-attachment: fixed;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+
+        #app {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            display: none;
+        }
+
+        .list-item {
+            border-top: 1px solid #fff;
+        }
+
+        .list-item:last-child {
+            border-bottom: 1px solid #fff;
+        }
+
+        .table {
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #E5E5E5;
+            border-collapse: collapse;
+        }
+
+        .table th {
+            position: relative;
+            width: 48px;
+            padding: 8px 0;
+            background-color: #fff;
+            border-right: 1px solid #E5E5E5;
+            box-sizing: border-box;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .table td {
+            position: relative;
+            padding: 12px 12px 4px;
+            background-color: #fff;
+        }
+
+        .table .two td,
+        .table .two th {
+            border: 1px solid #E5E5E5;
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 48px;
+            padding: 0 8px;
+            font-weight: bold;
+            line-height: 40px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .title .icon {
+            width: 12px;
+            height: 12px;
+            transition: all linear .24s;
+        }
+
+        .title.visible .icon {
+            transform: rotate(180deg);
+        }
+
+        .child {
+            margin-bottom: 12px;
+            padding: 0 8px 8px;
+            background-color: #fff;
+            border-radius: 6px;
+        }
+
+        .child:last-child {
+            margin-bottom: 0;
+        }
+
+        .child-title {
+            padding: 12px 0;
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .table th::before {
+            content: '';
+            position: absolute;
+            left: -1px;
+            width: 2px;
+        }
+
+        .table td::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 8px 8px 0;
+        }
+
+        .table .one th::before {
+            top: -1px;
+            bottom: 0;
+            background-color: #ed8c83;
+        }
+
+        .table .two th::before {
+            top: -1px;
+            bottom: 0;
+            background-color: #f9b38f;
+            z-index: 12;
+        }
+
+        .table .three th::before {
+            top: -1px;
+            bottom: -1px;
+            background-color: #8aadef;
+        }
+
+        .table .one td::before {
+            border-color: transparent #ed8c83 transparent transparent;
+        }
+
+        .table .two td::before {
+            border-color: transparent #f9b38f transparent transparent;
+        }
+
+        .table .three td::before {
+            border-color: transparent #8aadef transparent transparent;
+        }
+
+        .table .child-title::before {
+            display: none;
+        }
+
+        .content {
+            padding-bottom: 8px;
+            line-height: 24px;
+        }
+
+        .page-title {
+            padding-bottom: 10px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 40px;
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h2 class="page-title">北京儿童医学心身医学疾病谱</h2>
+        <ul class="list">
+            <li v-for="item in list" :key="item.title" class="list-item">
+                <h2 :class="['title', {visible: item.visible}]" @click="item.visible = !item.visible">
+                    {{item.title}}
+                    <svg t="1716591805110" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="5205" width="128" height="128">
+                        <path
+                            d="M512 670.72l-450.56-450.56-61.44 61.44 506.88 517.12 517.12-512-61.44-61.44L512 670.72z"
+                            fill="#fff" p-id="5206"></path>
+                    </svg>
+                </h2>
+                <div v-show="item.visible" style="padding-bottom: 12px;">
+                    <div v-for="child in item.children" :key="child.title" class="child">
+                        <h3 class="child-title">{{child.title}}</h3>
+                        <table class="table">
+                            <tr class="one">
+                                <th>主<br>要<br>症<br>状</th>
+                                <td>
+                                    <p v-for="main in child.main" class="content">{{main}}</p>
+                                </td>
+                            </tr>
+                            <tr class="two">
+                                <th>伴<br>随<br>症<br>状</th>
+                                <td>
+                                    <p v-for="follow in child.follow" class="content">{{follow}}</p>
+                                </td>
+                            </tr>
+                            <tr class="three">
+                                <th>排<br>除<br>病<br>因</th>
+                                <td>
+                                    <p v-for="exclude in child.exclude.filter(item => item)" class="content">{{exclude}}
+                                    </p>
+                                    <p v-if="!child.exclude[0]">暂无</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const canUseArr = [{ "title": "消化系统", visible: true, "children": [{ "title": "功能性腹泻(Functional Diarrhea)", "main": ["-慢性或间歇性腹泻（持续时间超过4周）。", "-排便频率增加（每天超过3次）。", "-粪便稀薄、水样，或含有未消化食物。"], "follow": ["-腹部不适或腹痛，通常在排便后缓解。", "-紧急排便感。", "-腹胀和排气增加。"], "exclude": ["-无感染性病因（如细菌、病毒、寄生虫感染）。", "-无炎症性肠病（如克罗恩病、溃疡性结肠炎）。", "-无药物或饮食引起的腹泻。"] }, { "title": "功能性便秘(Functional Constipation)", "main": ["-排便频率减少（每周少于3次）。", "-粪便干硬、排便困难。", "-排便不尽感。"], "follow": ["-腹胀和腹部不适。", "-需用力排便，或需手动辅助排便。", "-有时会出现肛裂或痔疮。"], "exclude": ["-无器质性病变（如肠道梗阻、肿瘤）。", "-无药物或饮食引起的便秘。", "-无代谢性疾病（如甲状腺功能减退）引起的便秘。"] }, { "title": "功能性胸痛(Functional Chest Pain)", "main": ["-胸部疼痛，但无心源性（非心脏疾病引起）。", "-疼痛通常与进食有关，可能在餐后加重。", "-痛感多为压迫感、灼烧感。"], "follow": ["-有时伴有打嗝、反酸、吞咽困难。", "-无明显体力活动诱发的疼痛。"], "exclude": ["-无冠心病或其他心脏疾病证据（如心电图、心脏超声正常）。", "-无食管疾病（如食管炎、食管痉挛）。"] }, { "title": "功能性吞咽困难(Functional Dysphagia)", "main": ["-吞咽时有阻塞感或不适感，但无器质性病变。", "-有时感觉食物在胸骨后滞留。"], "follow": ["-无食物反流、无明显体重减轻。", "-无吞咽疼痛。"], "exclude": ["-无食管病变（如食管狭窄、肿瘤）。", "-无神经系统疾病（如中风、神经肌肉病变）。"] }, { "title": "功能性消化不良(Functional Dyspepsia)", "main": ["-上腹部疼痛或不适，通常持续数小时。", "-饭后饱胀、早饱感。"], "follow": ["-恶心、反酸、打嗝。", "-有时会有胃灼热感。"], "exclude": ["-无消化性溃疡、胃食管反流病或其他器质性病变。", "-无胃肠道感染或其他系统性疾病。"] }, { "title": "嗳气综合征(Belching Syndrome)", "main": ["-频繁的打嗝，尤其在进食后。", "-无其他明显的胃肠道症状。"], "follow": ["-有时伴有腹胀或腹部不适。", "-无明显的体重变化。"], "exclude": ["-无胃肠道功能障碍或疾病。", "-无胃酸倒流或其他胃部疾病。"] }, { "title": "肠易激惹综合征(Irritable Bowel Syndrome)", "main": ["-慢性腹痛或腹部不适，通常在排便后缓解。", "-排便习惯改变（腹泻型、便秘型或混合型）。"], "follow": ["-腹胀、排气增加。", "-排便后症状缓解。", "-有时出现粘液便。"], "exclude": ["-无炎症性肠病（如克罗恩病、溃疡性结肠炎）。", "-无肿瘤或其他器质性病变。", "-无感染性病因。"] }, { "title": "功能性腹胀(Functional Bloating)", "main": ["-经常性腹胀，尤其在进食后加重。", "-腹部膨胀感，有时伴有腹痛。"], "follow": ["-排气增加。", "-排便习惯正常或轻度改变（腹泻或便秘）。"], "exclude": ["-无肠道阻塞或其他器质性病变。", "-无消化不良或胃肠道疾病。"] }] }, { "title": "心血管系统", "children": [{ "title": "功能性心脏病(Functional Heart Disease)", "main": ["-心前区不适或疼痛，无器质性心脏病变。", "-疼痛可能与情绪压力相关。", "-疼痛持续时间较长，性质不固定。"], "follow": ["-头晕、疲劳。", "-心悸或心跳异常感。", "-有时伴有焦虑或抑郁症状。"], "exclude": ["-无冠状动脉疾病或其他心脏病变证据（如心电图、心脏超声正常）。", "-无其他系统性疾病。"] }, { "title": "功能性心律失常(Functional Arrhythmia)", "main": ["-心悸，感觉心跳不规律。", "-心率波动明显，但无器质性病因。"], "follow": ["-头晕、乏力。", "-有时会有胸闷或呼吸困难感。"], "exclude": ["-无结构性心脏病（如心肌病、心脏瓣膜病）。", "-无电解质紊乱或药物引起的心率失常。"] }, { "title": "心脏综合征X(Cardiac Syndrome X)", "main": ["-心绞痛样胸痛，但冠状动脉造影正常。", "-疼痛多发生在运动或情绪激动时。"], "follow": ["-心悸、气短。", "-疼痛可放射至左肩或上臂。"], "exclude": ["-冠状动脉无明显狭窄或阻塞。", "-无其他心脏结构性病变。"] }, { "title": "体位性心动过速综合征(Postural Orthostatic Tachycardia Syndrome,POTS)", "main": ["-体位改变（如从坐位或卧位站立）时心率显著增加。", "-心率增加超过30次/分钟或达到120次/分钟以上。"], "follow": ["-头晕、乏力。", "-视力模糊、晕厥。", "-有时伴有腹痛、恶心。"], "exclude": ["-无明显低血压或其他心血管疾病。", "-无药物或脱水引起的心动过速。"] }, { "title": "功能性低血压(Functional Hypotension)", "main": ["-血压持续偏低，收缩压低于90mmHg或舒张压低于60mmHg。", "-体位变化时血压下降明显。"], "follow": ["-头晕、乏力、昏厥。", "-心悸、视力模糊。"], "exclude": ["-无心脏疾病或内分泌疾病（如肾上腺功能不全）。", "-无药物或脱水引起的低血压。"] }, { "title": "功能性高血压(Functional Hypertension)", "main": ["-血压波动明显，无持续性高血压病变。", "-收缩压或舒张压偶尔显著升高，但无固定模式。"], "follow": ["-头痛、头晕。", "-心悸、紧张感。"], "exclude": ["-无肾脏疾病或内分泌疾病。", "-无药物或其他病理状态引起的高血压。"] }, { "title": "过度换气综合征(Hyperventilation Syndrome)", "main": ["-呼吸频率加快，常常在焦虑或压力状态下发生。", "-感觉空气不足或呼吸困难。"], "follow": ["-头晕、手脚麻木或刺痛。", "-胸痛、心悸。", "-有时伴有晕厥或失去知觉。"], "exclude": ["-无肺部疾病（如哮喘、肺炎）。", "-无代谢性疾病（如代谢性酸中毒）。"] }] }, { "title": "内分泌系统", "children": [{ "title": "功能性甲亢(Functional Hyperthyroidism)", "main": ["-甲状腺功能亢进症状，但甲状腺激素水平正常。", "-心悸、心率增快。", "-多汗、怕热、体重减轻。"], "follow": ["-焦虑、易激动。", "-手抖、肌肉无力。", "-月经不调。"], "exclude": ["-甲状腺激素水平（TSH、T3、T4）正常。", "-无甲状腺肿大或结节。", "-无自身免疫性甲状腺疾病。"] }, { "title": "功能性甲减(Functional Hypothyroidism)", "main": ["-甲状腺功能减退症状，但甲状腺激素水平正常。", "-乏力、疲倦、嗜睡。", "-体重增加、怕冷。"], "follow": ["-皮肤干燥、头发稀疏。", "-记忆力减退、情绪低落。", "-月经不调、便秘。"], "exclude": ["-甲状腺激素水平（TSH、T3、T4）正常。", "-无甲状腺肿大或结节。", "-无自身免疫性甲状腺疾病。"] }, { "title": "功能性低血糖(Functional Hypoglycemia)", "main": ["-低血糖症状，但血糖水平正常。", "-头晕、心悸。", "-饥饿感、出汗。"], "follow": ["-颤抖、焦虑。", "-意识模糊、疲倦。", "-有时会有晕厥。"], "exclude": ["-血糖水平正常或仅轻微波动。", "-无糖尿病或胰岛素过量。", "-无其他内分泌疾病。"] }, { "title": "功能性高催乳素血症(Functional Hyperprolactinemia)", "main": ["-高催乳素症状，但催乳素水平正常。", "-月经不调、闭经。", "-不孕不育、乳房溢乳。"], "follow": ["-性欲减退。", "-头痛、视力模糊（较少见）。", "-男性可有阳痿。"], "exclude": ["-催乳素水平正常或仅轻微波动。", "-无垂体腺瘤或其他垂体病变。", "-无药物或肾功能不全引起的高催乳素血症。"] }, { "title": "功能性肾上腺皮质功能减退(Functional Adrenal Insufficiency)", "main": ["-肾上腺皮质功能减退症状，但激素水平正常。", "-乏力、疲倦。", "-低血压、体重减轻。"], "follow": ["-食欲不振、恶心、呕吐。", "-皮肤色素沉着。", "-头晕、晕厥。"], "exclude": ["-皮质醇和ACTH水平正常。", "-无肾上腺肿瘤或其他病变。", "-无自身免疫性肾上腺炎。"] }, { "title": "功能性内分泌失调综合征(Functional Endocrine Dysregulation Syndrome)", "main": ["-多种内分泌功能失调症状，但激素水平正常。", "-月经不调。", "-体重变化、情绪波动。"], "follow": ["-乏力、疲倦、心悸。", "-多毛、痤疮（多见于女性）。", "-性欲减退、性功能障碍。"], "exclude": ["-各类激素水平正常或仅轻微波动。", "-无明确内分泌腺体病变。", "-无药物或系统性疾病引起的内分泌失调。"] }] }, { "title": "神经系统", "children": [{ "title": "功能性震颤(Functional Tremor)", "main": ["-不自主的震颤，通常在休息或紧张时加重。", "-震颤的频率和幅度不规则。"], "follow": ["-焦虑或情绪波动。", "-震颤常在注意力分散时减轻。"], "exclude": ["-无帕金森病或其他神经系统疾病。", "-无药物或中毒引起的震颤。"] }, { "title": "功能性肌阵挛(Functional Myoclonus)", "main": ["-不自主的肌肉快速抽动，通常不规则。", "-肌阵挛在注意力集中时加重，分散时减轻。"], "follow": ["-焦虑、紧张。", "-无明显的意识丧失。"], "exclude": ["-无癫痫或其他中枢神经系统病变。", "-无药物或代谢异常引起的肌阵挛。"] }, { "title": "功能性抽搐(Functional Tics)", "main": ["-突然的、不自主的肌肉抽动或发声。", "-抽搐在压力大或焦虑时加重。"], "follow": ["-焦虑、情绪波动。", "-抽搐在分散注意力时减轻。"], "exclude": ["-无抽动症或其他神经系统疾病。", "-无药物或中毒引起的抽搐。"] }, { "title": "功能性步态障碍(Functional Gait Disorders)", "main": ["-行走困难或异常，步态不稳。", "-步态变化在不同情境下可能不同。"], "follow": ["-无明显的肌肉无力或感觉丧失。", "-焦虑或情绪波动。"], "exclude": ["-无中枢神经系统疾病（如中风、脊髓病变）。", "-无肌肉骨骼系统疾病。"] }, { "title": "功能性肌张力障碍(Functional Dystonia)", "main": ["-肌肉持续或间歇性收缩，导致异常姿势或运动。", "-症状在情绪紧张时加重。"], "follow": ["-焦虑或情绪波动。", "-症状在分散注意力时减轻。"], "exclude": ["-无遗传性或原发性肌张力障碍。", "-无药物或代谢异常引起的肌张力障碍。"] }, { "title": "伪癫痫发作(Psychogenic Non-Epileptic Seizures, PNES)", "main": ["-发作时无意识丧失或抽搐，但类似癫痫发作。", "-发作持续时间较长，不规律。"], "follow": ["-焦虑、情绪波动。", "-发作后无明显的疲倦或嗜睡。"], "exclude": ["-无癫痫或其他中枢神经系统病变。", "-脑电图在发作时正常。"] }, { "title": "功能性视力丧失(Functional VisualLoss)", "main": ["-视力下降或视野缺损，但眼科检查正常。", "-视力变化与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-其他感觉或运动症状。"], "exclude": ["-无眼科疾病（如白内障、青光眼）。", "-无中枢神经系统病变。"] }, { "title": "功能性听力丧失(Functional HearingLoss)", "main": ["-听力下降或听力丧失，但听力学检查正常。", "-听力变化与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-其他感觉或运动症状。"], "exclude": ["-无耳科疾病（如耳硬化症、噪声损伤）。", "-无中枢神经系统病变。"] }, { "title": "功能性感觉障碍(Functional Sensory Disturbances)", "main": ["-感觉减退、麻木或异常感觉，但神经检查正常。", "-感觉变化与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-其他感觉或运动症状。"], "exclude": ["-无外周神经病变或中枢神经系统疾病。", "-无代谢性疾病（如糖尿病）。"] }, { "title": "功能性头痛(Functional Headache)", "main": ["-持续或间歇性头痛，无明显的器质性病变。", "-头痛与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-无明显的神经系统体征。"], "exclude": ["-无偏头痛、紧张性头痛或其他原发性头痛疾病。", "-无中枢神经系统疾病。"] }] }, { "title": "泌尿系统", "children": [{ "title": "功能性尿频(Functional Urinary Frequency)", "main": ["-排尿频率增加，但无感染或其他泌尿系统病变。", "-尿量正常或略增。"], "follow": ["-焦虑、情绪波动。", "-无排尿困难或疼痛。"], "exclude": ["-无尿路感染、结石或肿瘤。", "-无内分泌疾病（如糖尿病）。"] }, { "title": "功能性尿急(Functional Urgency)", "main": ["-突然的、强烈的排尿冲动，但无感染或其他泌尿系统病变。"], "follow": ["-尿量正常或略增。", "-焦虑、情绪波动。"], "exclude": ["-无尿路感染、结石或肿瘤。", "-无内分泌疾病（如糖尿病）。"] }, { "title": "功能性尿失禁(Functional Urinary Incontinence)", "main": ["-尿失禁，但无感染或其他泌尿系统病变。", "-尿失禁可能与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-无明显的膀胱或尿道异常。"], "exclude": ["-无尿路感染、结石或肿瘤。", "-无神经系统疾病。"] }, { "title": "功能性遗尿(Functional Enuresis)", "main": ["-夜间或白天的尿失禁，但无感染或其他泌尿系统病变。"], "follow": ["-焦虑、情绪波动。", "-无明显的膀胱或尿道异常。"], "exclude": ["-无尿路感染、结石或肿瘤。", "-无神经系统疾病。"] }, { "title": "膀胱过度活动症(Overactive Bladder,OAB)", "main": ["-排尿频率增加，尿急和尿失禁。", "-尿量正常或略增。"], "follow": ["-夜尿增多。", "-排尿时无疼痛或不适。"], "exclude": ["-无尿路感染、结石或肿瘤。", "-无神经系统疾病。"] }] }, { "title": "呼吸系统", "children": [{ "title": "过度换气综合征(Hyperventilation Syndrome)", "main": ["-频繁深呼吸或快速呼吸，常在焦虑或紧张时发生。", "-呼吸急促、胸闷。"], "follow": ["-头晕、头痛。", "-手脚麻木或刺痛。", "-恶心、腹胀。"], "exclude": ["-无心肺疾病。", "-无代谢性疾病（如酸碱失衡）。"] }, { "title": "功能性呼吸困难(Functional Dyspnea)", "main": ["-呼吸困难，但无明确的器质性病因。", "-呼吸不畅感，通常与情绪或心理压力相关。"], "follow": ["-焦虑、抑郁。", "-胸闷、心悸。"], "exclude": ["-无心肺疾病。", "-无其他系统性疾病。"] }, { "title": "功能性咳嗽(Habit Cough)", "main": ["-持续性或间歇性咳嗽，但无明确的器质性病因。", "-咳嗽通常在注意力集中或情绪紧张时加重。"], "follow": ["-焦虑、抑郁。", "-咳嗽可能在睡眠时消失。"], "exclude": ["-无呼吸道感染或慢性疾病（如哮喘、COPD）。", "-无胃食管反流病。"] }, { "title": "慢性主观呼吸困难(Chronic Subjective Dyspnea)", "main": ["-持续的主观呼吸困难感，但无明确的器质性病因。", "-呼吸不畅，常在轻微活动或情绪波动时加重。"], "follow": ["-焦虑、抑郁。", "-胸闷、心悸。"], "exclude": ["-无心肺疾病。", "-无其他系统性疾病。"] }] }, { "title": "皮肤等系统", "children": [{ "title": "神经性皮炎(Neurodermatitis)", "main": ["-皮肤局部瘙痒，伴有抓痕或皮损。", "-皮肤损伤多见于易抓挠部位。"], "follow": ["-焦虑、紧张。", "-睡眠障碍。"], "exclude": ["-无真菌感染或其他皮肤病变。", "-无药物或过敏引起的皮疹。"] }, { "title": "精神性瘙痒(Psychogenic Pruritus)", "main": ["-持续或间歇性全身瘙痒，无明确的皮肤病变。", "-瘙痒与情绪或心理压力相关。"], "follow": ["-焦虑、抑郁。", "-无明显的皮肤损伤（如抓痕）。"], "exclude": ["-无皮肤病（如湿疹、荨麻疹）。", "-无内分泌或系统性疾病。"] }, { "title": "功能性皮肤疼痛(Functional SkinPain)", "main": ["-皮肤疼痛，无明显的外部损伤或病变。", "-疼痛与情绪或心理压力相关。"], "follow": ["-焦虑、抑郁。", "-无明显的皮肤变化。"], "exclude": ["-无皮肤病（如带状疱疹）。", "-无神经病变（如神经炎）。"] }, { "title": "拔毛癖(Trichotillomania)", "main": ["-不自主地拔除自己的头发或体毛，导致毛发减少或斑秃。"], "follow": ["-焦虑、紧张。", "-拔毛行为通常在压力大时加重。"], "exclude": ["-无皮肤病变。", "-无精神病性疾病。"] }, { "title": "撕皮症(Skin Picking Disorder)", "main": ["-不自主地撕皮肤，导致皮肤损伤或溃疡。"], "follow": ["-焦虑、紧张。", "-撕皮行为通常在压力大时加重。"], "exclude": ["-无皮肤病变。", "-无精神病性疾病。"] }, { "title": "功能性皮疹(Functional Rash)", "main": ["-皮疹出现，但无明确的皮肤病因。", "-皮疹与情绪或心理压力相关。"], "follow": ["-瘙痒、烧灼感。", "-焦虑、紧张。"], "exclude": ["-无真菌感染或其他皮肤病变。", "-无药物或过敏引起的皮疹。"] }] }, { "title": "其他系统", "children": [{ "title": "心因性发热(Psychogenic Fever)", "main": ["-持续或间歇性发热，但无感染或其他器质性病因。", "-体温升高通常与情绪或心理压力相关。"], "follow": ["-焦虑、紧张。", "-无明显的其他系统性症状。"], "exclude": ["-无感染性疾病（如细菌、病毒感染）。", "-无炎症性疾病（如自身免疫性疾病）。"] }, { "title": "功能性视力丧失(Functional VisionLoss)", "main": ["-视力下降或视野缺损，但眼科检查正常。", "-视力变化与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-其他感觉或运动症状。"], "exclude": ["-无眼科疾病（如白内障、青光眼）。", "-无中枢神经系统病变。"] }, { "title": "心因性视力模糊(Psychogenic Blurred Vision)", "main": ["-视力模糊，但眼科检查正常。", "-视力变化与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-其他感觉或运动症状。"], "exclude": ["-无眼科疾病（如屈光不正）。", "-无中枢神经系统病变。"] }, { "title": "心因性咽喉异物感(Globus Pharyngeus)", "main": ["-咽喉部有异物感或梗阻感，但无实质性病变。", "-异物感与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-无吞咽困难或疼痛。"], "exclude": ["-无咽喉或食管病变。", "-无神经系统疾病。"] }, { "title": "功能性失声(Functional Aphonia)", "main": ["-声音嘶哑或失声，但声带检查正常。", "-失声与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-无咽喉痛或吞咽困难。"], "exclude": ["-无声带或喉部病变。", "-无神经系统疾病。"] }, { "title": "心因性眩晕(Psychogenic Vertigo)", "main": ["-眩晕或头晕，但无明确的耳科或神经系统病因。", "-眩晕与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-无耳鸣或听力下降。"], "exclude": ["-无前庭系统疾病（如梅尼埃病）。", "-无中枢神经系统病变。"] }, { "title": "心因性听力损失(Psychogenic Hearing Loss)", "main": ["-听力下降或听力丧失，但听力学检查正常。", "-听力变化与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-其他感觉或运动症状。"], "exclude": ["-无耳科疾病（如耳硬化症、噪声损伤）。", "-无中枢神经系统病变。"] }, { "title": "功能性耳鸣(Functional Tinnitus)", "main": ["-耳鸣，但听力学检查正常。", "-耳鸣与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-头痛或头晕。"], "exclude": ["-无耳科疾病（如中耳炎）。", "-无中枢神经系统病变。"] }, { "title": "心因性牙痛(Psychogenic Toothache)", "main": ["-牙齿疼痛，但牙科检查正常。", "-牙痛与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-无牙龈出血或肿胀。"], "exclude": ["-无牙齿或牙周病变。", "-无面部神经痛。"] }, { "title": "心因性口干(Psychogenic Xerostomia)", "main": ["-口干，但唾液腺功能正常。", "-口干感与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-无口腔溃疡或舌痛。"], "exclude": ["-无唾液腺病变（如舍格伦综合征）。", "-无药物或脱水引起的口干。"] }, { "title": "口腔灼热综合症(Burning Mouth Syndrome, BMS)", "main": ["-口腔或舌头有灼热感，但口腔检查正常。", "-灼热感与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-无口腔溃疡或红肿。"], "exclude": ["-无口腔疾病（如口腔炎）。", "-无神经系统病变。"] }, { "title": "功能性口腔运动障碍(Functional Oral Movement Disorders)", "main": ["-口腔或舌头运动异常，但神经学检查正常。", "-运动障碍与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-无咀嚼或吞咽困难。"], "exclude": ["-无神经系统疾病（如帕金森病）。", "-无口腔肌肉病变。"] }, { "title": "功能性口腔溃疡(Functional OralUlcers)", "main": ["-口腔溃疡反复发作，但无明确的病因。", "-溃疡与情绪或心理压力相关。"], "follow": ["-疼痛、灼热感。", "-焦虑、情绪波动。"], "exclude": ["-无感染性病因（如病毒、细菌感染）。", "-无免疫系统疾病。"] }, { "title": "术后功能性障碍(Postoperative Functional Disorders)", "main": ["-手术后出现的功能性症状，如疼痛、乏力，但无器质性病因。", "-症状与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-无明显的感染或并发症。"], "exclude": ["-无手术并发症（如感染、组织损伤）。", "-无基础疾病引起的症状。"] }, { "title": "心因性疼痛(Psychogenic Pain)", "main": ["-持续或间歇性疼痛，但无明确的器质性病因。", "-疼痛与情绪或心理压力相关。"], "follow": ["-焦虑、抑郁。", "-无明显的外部损伤或病变。"], "exclude": ["-无肌肉骨骼系统病变。", "-无神经系统病变。"] }, { "title": "功能性尿潴留(Functional Urinary Retention)", "main": ["-排尿困难或尿潴留，但无明确的泌尿系统病因。", "-尿潴留与情绪或心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-无排尿疼痛或血尿。"], "exclude": ["-无泌尿系统疾病（如尿路梗阻）。", "-无神经系统病变。"] }, { "title": "慢性疲劳综合征(Chronic Fatigue Syndrome, CFS)", "main": ["-持续或反复的极度疲劳，休息后无法缓解。", "-疲劳持续时间超过6个月。"], "follow": ["-睡眠障碍、头痛、咽喉痛。", "-记忆力减退、注意力不集中。"], "exclude": ["-无感染性病因（如病毒感染）。", "-无内分泌或代谢性疾病。"] }] }, { "title": "精神科", "children": [{ "title": "躯体症状障碍(Somatic Symptom Disorder)", "main": ["-持续存在的身体症状，如疼痛或疲劳，无法用医学解释。", "-症状导致显著的困扰或日常功能受损。"], "follow": ["-过度关注健康或症状。", "-经常寻求医疗帮助，但检查结果多为正常。", "-焦虑、抑郁。"], "exclude": ["-无明显的器质性疾病。", "-无特定的心理或精神病原因。"] }, { "title": "疾病焦虑症(Illness Anxiety Disorder)", "main": ["-持续担心自己患有严重疾病，即使医学检查结果正常。", "-对身体正常感觉或轻微症状的过度反应。"], "follow": ["-频繁检查身体，反复就医。", "-焦虑、抑郁。"], "exclude": ["-无明确的身体疾病。", "-无其他精神疾病（如广泛性焦虑障碍）。"] }, { "title": "转换障碍(Conversion Disorder)", "main": ["-无法用医学解释的神经系统症状，如瘫痪、失语、失明。", "-症状通常与心理压力或冲突相关。"], "follow": ["-焦虑、情绪波动。", "-症状可能在情绪紧张时加重。"], "exclude": ["-无明确的神经系统病变。", "-无其他心理或精神疾病。"] }, { "title": "心理因素影响的其他疾病(Psychological Factors Affecting Other Medical Conditions)", "main": ["-心理因素明显影响某些医学条件，如哮喘、胃溃疡。", "-症状与心理压力或情绪相关。"], "follow": ["-焦虑、抑郁。", "-疾病症状波动与情绪状态密切相关。"], "exclude": ["-无单纯的心理疾病。", "-无其他器质性疾病。"] }, { "title": "疑病症(Hypochondriasis)", "main": ["-持续的、过度的担心自己患有某种疾病。", "-对身体的正常感觉或轻微症状的反应过度。"], "follow": ["-频繁就医，反复要求检查。", "-焦虑、抑郁。"], "exclude": ["-无明确的身体疾病。", "-无其他精神疾病（如强迫症）。"] }, { "title": "身体形式疼痛障碍(Somatic Pain Disorder)", "main": ["-持续存在的严重疼痛，无法用医学解释。", "-疼痛导致显著的困扰或日常功能受损。"], "follow": ["-焦虑、抑郁。", "-过度使用镇痛药物。"], "exclude": ["-无明显的器质性病因。", "-无特定的心理或精神病原因。"] }, { "title": "创伤后应激障碍(Post-TraumaticStressDisorder, PTSD)", "main": ["-经历或目睹创伤性事件后持续存在的重现性、闪回性记忆。", "-避免与创伤相关的刺激。", "-高度警觉和易惊吓反应。"], "follow": ["-焦虑、抑郁。", "-睡眠障碍、易怒。"], "exclude": ["-无其他心理或精神疾病。"] }, { "title": "功能性抽动障碍(Functional Tic Disorders)", "main": ["-不自主的、反复的肌肉抽动或发声。", "-抽动症状与心理压力相关。"], "follow": ["-焦虑、情绪波动。", "-症状可能在注意力分散时减轻。"], "exclude": ["-无抽动症或其他神经系统疾病。", "-无药物或中毒引起的抽动。"] }, { "title": "急性应激障碍(Acute Stress Disorder)", "main": ["-经历或目睹创伤性事件后的短期反应，持续3天至1个月。", "-闪回、恶梦、解离症状。", "-回避行为和高度警觉。"], "follow": ["-焦虑、情绪波动。", "-睡眠障碍、注意力不集中。"], "exclude": ["-无其他心理或精神疾病。"] }, { "title": "进食障碍(Eating Disorders)", "main": ["-异常的饮食行为，如厌食症（拒食）、暴食症（暴饮暴食）。", "-强烈的体型和体重关注。"], "follow": ["-焦虑、抑郁。", "-身体健康问题（如营养不良、胃肠道问题）。"], "exclude": ["-无其他内科疾病导致的体重变化。", "-无其他心理或精神疾病。"] }, { "title": "网络/物质成瘾(Internet/Substance Addiction)", "main": ["-对网络或物质的强烈依赖和控制力下降。", "-使用时间或剂量逐渐增加。"], "follow": ["-社交、职业或学业功能受损。", "-焦虑、抑郁。"], "exclude": ["-无其他成瘾性行为（如赌博成瘾）。", "-无其他心理或精神疾病。"] }, { "title": "性心理障碍(Sexual Psychopathology)", "main": ["-性发育过程中出现的各种性相关的心理问题。", "-性相关的异常表现。"], "follow": ["-焦虑、抑郁。", "-社交或家庭关系问题。"], "exclude": ["-无其他内分泌或生理疾病。", "-无其他心理或精神疾病。"] }, { "title": "各种以躯体症状为核心的焦虑、抑郁、强迫等精神障碍", "main": ["-躯体症状（如疼痛、疲劳、心悸）伴随显著的焦虑、抑郁或强迫症状。", "-躯体症状与情绪状态密切相关。"], "follow": ["-焦虑、抑郁、强迫行为。", "-社交、职业或日常功能受损。"], "exclude": ["-无明确的器质性疾病。", "-无其他心理或精神疾病。"] }] }, { "title": "躯体疾病伴发的精神心理疾病", "children": [{ "title": "慢性胃炎相关的精神心理症状", "main": ["-持续的胃痛或胃部不适。", "-饭后胀气、嗳气。"], "follow": ["-焦虑、抑郁情绪。", "-睡眠障碍、疲倦。"], "exclude": ["-无胃溃疡或胃癌。", "-无其他消化系统疾病。"] }, { "title": "炎症性肠病相关的精神心理症状", "main": ["-腹痛、腹泻或便秘。", "-体重减轻、食欲不振。"], "follow": ["-焦虑、抑郁。", "-社交障碍、工作学习困难。"], "exclude": ["-无肠道感染。", "-无其他消化系统疾病。"] }, { "title": "胃食管反流病相关的精神心理症状", "main": ["-胃酸倒流、烧心。", "-吞咽困难、胸痛。"], "follow": ["-焦虑、抑郁。", "-睡眠障碍、疲倦。"], "exclude": ["-无食管癌。", "-无其他食管疾病。"] }, { "title": "心脏病相关的精神心理症状", "main": ["-胸痛、心悸。", "-气短、乏力。"], "follow": ["-焦虑、恐慌发作。", "-抑郁、社会隔离。"], "exclude": [""] }, { "title": "高血压相关的精神心理症状", "main": ["-持续的高血压。", "-头痛、头晕。"], "follow": ["-焦虑、抑郁。", "-注意力不集中、记忆力减退。"], "exclude": [""] }, { "title": "肥胖相关的精神心理症状", "main": ["-体重显著增加。", "-呼吸困难、活动能力下降。"], "follow": ["-焦虑、抑郁。", "-自尊心下降、社交障碍。"], "exclude": [""] }, { "title": "早熟/矮小相关的精神心理症状", "main": ["-身高低于同龄儿童平均水平或性发育过早。"], "follow": ["-焦虑、自卑。", "-社交障碍、学习困难。"], "exclude": [""] }, { "title": "甲状腺功能异常相关的精神心理症状", "main": ["-甲状腺功能亢进或减退症状。"], "follow": ["-焦虑、抑郁。", "-注意力不集中、记忆力减退。"], "exclude": [""] }, { "title": "内分泌失调相关的精神心理症状", "main": ["-月经不调、性功能障碍。", "-体重变化、疲倦。"], "follow": ["-焦虑、抑郁。", "-情绪波动、睡眠障碍。"], "exclude": [""] }, { "title": "糖尿病相关的精神心理症状", "main": ["-高血糖、低血糖。", "-体重变化、口渴多尿。"], "follow": ["-焦虑、抑郁。", "-注意力不集中、记忆力减退。"], "exclude": [""] }, { "title": "癫痫相关的精神心理症状", "main": ["-癫痫发作。"], "follow": ["-焦虑、抑郁。", "-注意力不集中、记忆力减退。"], "exclude": [""] }, { "title": "脑炎相关的精神心理症状", "main": ["-头痛、发热。", "-意识改变、神经系统症状。"], "follow": ["-焦虑、抑郁。", "-注意力不集中、记忆力减退。"], "exclude": [""] }, { "title": "脑瘫相关的精神心理症状", "main": ["-肢体运动障碍。", "-智力发育迟缓。"], "follow": ["-焦虑、抑郁。", "-社交障碍、学习困难。"], "exclude": [""] }, { "title": "脑外伤/脑肿瘤相关的精神心理症状", "main": ["-头痛、呕吐。", "-意识改变、神经系统症状。"], "follow": ["-焦虑、抑郁。", "-注意力不集中、记忆力减退。"], "exclude": [""] }, { "title": "遗尿症相关的精神心理症状", "main": ["-无意识的夜间或白天尿失禁。"], "follow": ["-焦虑、抑郁。", "-社交障碍、低自尊。"], "exclude": [""] }, { "title": "遗粪症相关的精神心理症状", "main": ["-无意识的大便失禁。"], "follow": ["-焦虑、抑郁。", "-社交障碍、低自尊。"], "exclude": [""] }, { "title": "COPD相关的精神心理障碍", "main": ["-持续的呼吸困难、咳嗽。"], "follow": ["-焦虑、抑郁。", "-社交障碍、活动受限。"], "exclude": [""] }, { "title": "肿瘤相关的精神心理症状", "main": ["-持续的疼痛、乏力。", "-体重减轻、食欲不振。"], "follow": ["-焦虑、抑郁。", "-社交障碍、失眠。"], "exclude": [""] }, { "title": "烧伤/创伤相关的精神心理症状", "main": ["-持续的疼痛、创伤后应激症状。"], "follow": ["-焦虑、抑郁。", "-社交障碍、失眠。"], "exclude": [""] }, { "title": "哮喘相关的精神心理症状", "main": ["-持续的咳嗽、呼吸困难。"], "follow": ["-焦虑、抑郁。", "-社交障碍、失眠。"], "exclude": [""] }, { "title": "睡眠相关的精神心理症状", "main": ["-睡眠困难、失眠。", "-白天嗜睡、乏力。"], "follow": ["-焦虑、抑郁。", "-注意力不集中、记忆力减退。"], "exclude": [""] }, { "title": "过敏性紫癜伴发的精神心理症状", "main": ["-皮肤出血点、瘀斑。", "-关节痛、腹痛。"], "follow": ["-焦虑、抑郁。", "-注意力不集中、记忆力减退。"], "exclude": [""] }] }];
+
+
+        const HelloVueApp = {
+            data() {
+                return {
+                    list: canUseArr,
+                }
+            },
+            mounted() {
+                document.getElementById('app').style.display = 'block';
+            },
+            methods: {
+            }
+        }
+
+        Vue.createApp(HelloVueApp).mount('#app');
+    </script>
+</body>
+
+</html>
