@@ -46,26 +46,26 @@
 		}
 	},
 	{
-		"position": 4,
+		"position": 1,
 		"CN": {
-			"avatar": "0003.png",
-			"name": "赵荣江",
-			"title": "",
-			"affiliations": "首都医科大学附属北京儿童医院",
-			"education": "硕士研究生，精神病与精神卫生学，新疆医科大学",
-			"professional_title": "专业职称：副主任医师",
-			"research_focus": "主要研究方向：精神疾病的药物干预；青少年情感障碍及心理健康   ",
-			"email": "邮箱: zhaorongjiang5@163.com"
+			"avatar": "0013.png",
+			"name": "杨晗雪",
+			"title": "博士 实验室Co-PI",
+			"affiliations": "北京语言大学心理学院讲师",
+			"education": "2022年毕业于中国科学院大学（中国科学院心理研究所）认知神经科学博士，师从欧洲科学与艺术学院院士、杰青陈楚侨老师",
+			"professional_title": "",
+			"research_focus": "研究方向：精神分裂症、孤独症、情感障碍的感知觉异常和神经机制；青少年手机成瘾、拒学行为及躯体变形障碍。",
+			"email": ""
 		},
 		"EN": {
-			"avatar": "0003.png",
-			"name": "Zhao Rongjiang",
-			"title": "",
-			"affiliations": "Affiliation: Beijing Children's Hospital affiliated with Capital Medical University",
-			"education": "Education: Master's degree, Psychiatry and Mental Health, Xinjiang Medical University",
-			"professional_title": "Professional Title: Associate Chief Physician",
-			"research_focus": "Main Research Areas: Pharmacological interventions in psychiatric diseases; emotional disorders and mental health in adolescents",
-			"email": "Email: zhaorongjiang5@163.com"
+			"avatar": "0013.png",
+			"name": "Yang Hanxue",
+			"title": "Doctor, Co-Principal Investigator (Co-PI) of the Laboratory",
+			"affiliations": "Lecturer at School of Psychology, Beijing Language and Culture University.",
+			"education": "PGraduated in 2022 with a Ph.D. in Cognitive Neuroscience from the University of Chinese Academy of Sciences (Institute of Psychology, Chinese Academy of Sciences). Mentored by Academician of the European Academy of Sciences and Arts, Raymond. C. K. Chan.",
+			"professional_title": "",
+			"research_focus": "Research Focus: Sensory and cognitive/affective abnormalities of schizophrenia, autism spectrum disorders, and mood disorders; smartphone addiction, school refusal, and body dysmorphic disorders in adolescents.",
+			"email": ""
 		}
 	},
 	{
@@ -82,6 +82,29 @@
 		},
 		"EN": {
 			"avatar": "0004.png",
+			"name": "Hu Na",
+			"title": "",
+			"affiliations": "Affiliation: Beijing Children's Hospital affiliated with Capital Medical University",
+			"education": "Education: Master's degree, Psychology, Sichuan University",
+			"professional_title": "Professional Title: Attending Physician",
+			"research_focus": "Main Research Areas: Non-pharmacological interventions in psychiatric diseases; emotional disorders and mental health in adolescents",
+			"email": "Email: foxlehu@163.com"
+		}
+	},
+	{
+		"position": 4,
+		"CN": {
+			"avatar": "0015.png",
+			"name": "胡娜",
+			"title": "",
+			"affiliations": "单位：首都医科大学附属北京儿童医院",
+			"education": "硕士研究生，心理学，四川大学",
+			"professional_title": "专业职称：主治医师",
+			"research_focus": "主要研究方向：精神疾病的非药物干预；青少年情感障碍及心理健康      ",
+			"email": "邮箱: foxlehu@163.com"
+		},
+		"EN": {
+			"avatar": "0015.png",
 			"name": "Hu Na",
 			"title": "",
 			"affiliations": "Affiliation: Beijing Children's Hospital affiliated with Capital Medical University",
@@ -181,6 +204,29 @@
 			"professional_title": "Professional Title: Pediatric Resident",
 			"research_focus": "Main Research Areas: Mental health in children and adolescents",
 			"email": "Email: srkun568@126.com"
+		}
+	},
+	{
+		"position": 3,
+		"CN": {
+			"avatar": "0014.png",
+			"name": "张万玲",
+			"title": "",
+			"affiliations": "",
+			"education": "首都医科大学博士（在读）；精神病与精神卫生专业",
+			"professional_title": "",
+			"research_focus": "主要研究方向：儿童青少年精神疾病的心理病理机制",
+			"email": ""
+		},
+		"EN": {
+			"avatar": "0014.png",
+			"name": "Zhang Wanling",
+			"title": "",
+			"affiliations": "",
+			"education": "Education: PhD Candidate in Psychiatry and Mental Health at Capital Medical University",
+			"professional_title": "",
+			"research_focus": "Research Focus: Psychopathological mechanisms of mental illness in children and adolescents",
+			"email": ""
 		}
 	},
 	{
