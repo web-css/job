@@ -54,6 +54,33 @@
 		}
 	},
 	{
+		"year": 2024,
+		"CN": {
+			"cover": "",
+			"title": "The shortage of child psychiatrists in mainland China. Nature Mental Health, 1-4. doi: 10.1038/s44220-024-00273-7",
+			"authors": "Jiang, Z., Abbey, C., Chen, J., Yang, Z., Xu, H., Zhang, A., ... & <b>Li, Y.*</b> (2024). ",
+			"link": "https://doi.org/10.1038/s44220-024-00273-7"
+		}
+	},
+	{
+		"year": 2024,
+		"CN": {
+			"cover": "",
+			"title": "Interoception in mental disorders: from self-awareness to interventions. Proceedings of the European Academy of Sciences & Arts, 3:32 doi: 10.4081/peasa.2024.32",
+			"authors": "<b>Yang, H.-X.</b>, Zhou, H.-Y., Lui, S. S. Y., Chan, R. C. K.* (2024).",
+			"link": ""
+		}
+	},
+	{
+		"year": 2024,
+		"CN": {
+			"cover": "",
+			"title": "A network analysis of alexithymia and smartphone addiction in children and adults. Current Psychology doi:10.1007/s12144-024-05986-7",
+			"authors": "<b>Yang, H.-X. *</b>, Chen, Y.-J., Yuan, R.-M., Yan, J.-W., Zhang, N., Zhou, H.-Y. (2024).",
+			"link": "https://doi.org/10.1007/s12144-024-05986-7"
+		}
+	},
+	{
 		"year": 2023,
 		"CN": {
 			"cover": "",
@@ -105,6 +132,15 @@
 			"title": "Association of depressive symptoms with chronic liver disease among middle-aged and older adults in China. Frontiers in Psychiatry. 2023, 14:1273754.",
 			"authors": "Jingke Zeng, Xiaohuan Lai, Shuigen Wang, Dijing Zeng, Jiangmin Ye, Chunhua Huang, Minhua Liu, Wenjuan Zhang*, <b>Hui Xu</b>*.",
 			"link": "https://doi.org/10.3389/fpsyt.2023.1273754"
+		}
+	},
+	{
+		"year": 2023,
+		"CN": {
+			"cover": "",
+			"title": "Relationship between interoception and autistic traits: A resting-state functional connectivity study. Journal of Autism and Developmental Disorders",
+			"authors": "<b>Yang, H.-X.</b>, Zhang, Y. J., Hu, H. X., Wang, L. L.m Yan, Y. J., Lui, S. S. Y., Wang, Y., Chan, R. C. K.* (2023).",
+			"link": ""
 		}
 	},
 	{
@@ -252,6 +288,15 @@
 		}
 	},
 	{
+		"year": 2022,
+		"CN": {
+			"cover": "",
+			"title": "Decreased interoceptive accuracy in children with autism spectrum disorder and with comorbid attention deficit/hyperactivity disorder. Autism Research, 15(4), 729-739.",
+			"authors": "<b>Yang, H.-X.</b>, Zhou, H.-Y., Li, Y., Cui Y.-H., Xiang, Y., Yuan, R.-M., Lui, S. S. Y., & Chan, R. C. K*. (2022).",
+			"link": ""
+		}
+	},
+	{
 		"year": 2021,
 		"CN": {
 			"cover": "",
@@ -312,6 +357,33 @@
 			"title": "A healthy lifestyle mitigates the risk of heart disease related to type 2 diabetes: a prospective nested case-control study in a nationwide Swedish twin cohort, Diabetologia. 2021, 64(3): 530-539.",
 			"authors": "Rongrong Yang#, <b>Hui Xu</b>#, Nancy L Pedersen, Xuerui Li, Jing Yu, Cuiping Bao, Xiuying Qi*, Weili Xu*.",
 			"link": "https://doi.org/10.1007/s00125-020-05324-z"
+		}
+	},
+	{
+		"year": 2021,
+		"CN": {
+			"cover": "",
+			"title": "Multidimensional Interoception and Autistic Traits Across Life Stages: Evidence from a Novel Eye-tracking Task. Journal of Autism and Developmental Disorders.",
+			"authors": "<b>Yang, H.-X.</b>, Zhou, H.-Y., Wei, Z., Wan, G.-B., Wang, Y., Wang, Y.-Y., . . . Chan, R. C. K. (2021).",
+			"link": ""
+		}
+	},
+	{
+		"year": 2021,
+		"CN": {
+			"cover": "",
+			"title": "Individuals with Autistic Traits Exhibit Heightened Alexithymia but Intact Interoceptive-Exteroceptive Sensory Integration. Journal of Autism and Developmental Disorders.",
+			"authors": "<b>Yang, H.-X.</b>, Zhou, H.-Y., Zheng, H., Wang, Y., Wang, Y.-Y., Lui, S. S. Y., & Chan, R. C. K. (2021).",
+			"link": ""
+		}
+	},
+	{
+		"year": 2021,
+		"CN": {
+			"cover": "",
+			"title": "A network analysis of interoception, self-awareness, empathy, alexithymia, and autistic traits. European Archives of Psychiatry and Clinical Neuroscience.",
+			"authors": "<b>Yang, H.-X.</b>, Hu, H.-X., Zhang, Y.-J., Wang, Y., Lui, S. S. Y., & Chan, R. C. K. (2021). ",
+			"link": ""
 		}
 	},
 	{
@@ -393,6 +465,15 @@
 			"title": "Osteoporosis and osteopenia among patients with type 2 diabetes aged ≥50: role of sex and clinical characteristics. J Clin Densitom. 2020, 23(1):29-36.",
 			"authors": "<b>Hui Xu</b>#, Zhida Wang#, Xuerui Li, Meijuan Fan, Cuiping Bao, Rongrong Yang, Fei Song, Weili Xu*, Xiuying Qi*. ",
 			"link": "https://doi.org/10.1016/j.jocd.2019.04.004"
+		}
+	},
+	{
+		"year": 2020,
+		"CN": {
+			"cover": "",
+			"title": "Exploring the links between alexithymia, empathy and schizotypy in college students using network analysis. Cognitive Neuropsychiatry, 25(4), 245-253.",
+			"authors": "<b>Yang, H. X.</b>, Shi, H. S., Ni, K., Wang, Y., Cheung, E. F. C., & Chan, R. C. K. (2020). ",
+			"link": ""
 		}
 	},
 	{

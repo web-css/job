@@ -41,13 +41,17 @@
             line-height: 40px;
         }
 
+        .publication-items__link.no-link {
+            cursor: default;
+        }
+
         .publication-items__link .fal {
             color: var(--theme);
             font-weight: bold;
             margin-right: 4px;
         }
 
-        .publication-items__link:hover {
+        .publication-items__link.has-link:hover {
             color: var(--theme);
             box-shadow: var(--bs-box-shadow-sm);
         }
@@ -270,7 +274,11 @@
                                     :value="item.value" />
                             </el-select>
                         </div>
-                        <div v-for="(item, index) in filterList" :key="item.title" class="publication-items" :style="{
+                        <div 
+                            v-for="(item, index) in filterList" 
+                            :key="item.title" 
+                            class="publication-items" 
+                            :style="{
                                     marginBottom: index === filterList.length - 1 
                                         ? 0
                                         : (((index < filterList.length - 1) && item.year !== filterList[index + 1].year) ? '60px' : '20px')
@@ -279,8 +287,10 @@
                                 style="position: absolute; top: -40px; user-select: none; line-height: 20px;">
                                 {{item.year}}年{{item.year === 2019?'以前':''}}
                             </h3>
-
-                            <a target="_blank" :href="item.link" class="publication-items__link">
+                            <a 
+                                :target="item.link ? '_blank' : '_self'" 
+                                :href="item.link || 'javascript:void(0);'" 
+                                :class="['publication-items__link', item.link ? 'has-link' : 'no-link']">
                                 <div>
                                     <i class="fal fa-angle-double-right"></i>&nbsp; {{item.title}}
                                 </div>
