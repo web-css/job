@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="CAPMH Lab">
-    <meta name="description" content="儿童青少年精神疾病与心理健康研究室">
+    <meta name="description" content="临床心理学与神经科学实验室">
     <!-- ======== Page title ============ -->
-    <title>儿童青少年精神疾病与心理健康研究室</title>
+    <title>临床心理学与神经科学实验室</title>
     <!--<< Favicon >>-->
     <link rel="shortcut icon" href="assets/img/favicon.ico">
     <!-- element-plus -->
@@ -27,6 +27,35 @@
     <link rel="stylesheet" href="assets/css/meanmenu.css">
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        .publication-items {
+            position: relative;
+        }
+
+        .publication-items__link {
+            display: block;
+            padding: 12px 20px;
+            background-color: var(--bg);
+            border-radius: 2px;
+            line-height: 40px;
+        }
+
+        .publication-items__link.no-link {
+            cursor: default;
+        }
+
+        .publication-items__link .fal {
+            color: var(--theme);
+            font-weight: bold;
+            margin-right: 4px;
+        }
+
+        .publication-items__link.has-link:hover {
+            color: var(--theme);
+            box-shadow: var(--bs-box-shadow-sm);
+        }
+    </style>
 </head>
 
 <body>
@@ -46,26 +75,20 @@
                 <span data-text-preloader="C" class="letters-loading">
                     C
                 </span>
-                <span data-text-preloader="A" class="letters-loading">
-                    A
-                </span>
                 <span data-text-preloader="P" class="letters-loading">
                     P
                 </span>
-                <span data-text-preloader="M" class="letters-loading">
-                    M
-                </span>
-                <span data-text-preloader="H" class="letters-loading">
-                    H
+                <span data-text-preloader="N" class="letters-loading">
+                    N
                 </span>
                 <span data-text-preloader="L" class="letters-loading">
                     L
                 </span>
-                <span data-text-preloader="a" class="letters-loading">
-                    a
+                <span data-text-preloader="A" class="letters-loading">
+                    A
                 </span>
-                <span data-text-preloader="b" class="letters-loading">
-                    b
+                <span data-text-preloader="B" class="letters-loading">
+                    B
                 </span>
             </div>
             <p class="text-center">Loading...</p>
@@ -109,7 +132,7 @@
 
                     <div class="mobile-menu fix mb-3"></div>
                     <p class="text d-none d-xl-block mb-5">
-                        儿童青少年精神疾病与心理健康研究室（Child and Adolescent Psychiatry& Mental Health Laboratory）
+                        临床心理学与神经科学实验室（Clinical Psychology and Neuroscience Laboratory）
                     </p>
                     <div class="offcanvas__contact">
                         <h4 i18n="CONTACT"></h4>
@@ -119,15 +142,7 @@
                                     <i class="fal fa-map-marker-alt"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    北京市西城区南礼士56号，北京儿童医院
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon">
-                                    <i class="fal fa-map-marker-alt"></i>
-                                </div>
-                                <div class="offcanvas__contact-text">
-                                    -
+                                    北京市海淀区阜外白堆子甲23号 首都师范大学心理学院
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -135,16 +150,8 @@
                                     <i class="fal fa-envelope"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="mailto:liying@bch.com.cn"><span
-                                            class="mailto:liying@bch.com.cn">liying@bch.com.cn</span></a>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon mr-15">
-                                    <i class="far fa-phone"></i>
-                                </div>
-                                <div class="offcanvas__contact-text">
-                                    <a href="tel:010-5961XXXX">010-5961XXXX</a>
+                                    <a href="mailto:wangyazsu@gmail.com"><span
+                                            class="mailto:wangyazsu@gmail.com">wangyazsu@gmail.com</span></a>
                                 </div>
                             </li>
                         </ul>
@@ -182,9 +189,6 @@
                                                 <a href="publication.html" i18n="PUBLICATIONS"></a>
                                             </li>
                                             <li>
-                                                <a href="software.html" i18n="SOFTWARE"></a>
-                                            </li>
-                                            <li>
                                                 <a href="javascript:void(0);" i18n="NEWS" class="active"
                                                     style="cursor: default;"></a>
                                             </li>
@@ -215,7 +219,7 @@
 
     <!--<< Breadcrumb Section Start >>-->
     <div class="breadcrumb-wrapper section-padding bg-cover"
-        style="height: 360px; background-image: url('assets/img/breadcrumb-02.jpeg');">
+        style="height: 360px; background-image: url('assets/img/breadcrumb-02.jpg');">
         <div class="container">
             <div class="page-heading">
                 <h1 class="wow fadeInUp" data-wow-delay=".3s" i18n="NEWS"></h1>
@@ -233,6 +237,7 @@
         </div>
     </div>
 
+
     <!--<< Blog Wrapper Here >>-->
     <section class="blog-wrapper news-wrapper section-padding">
         <div class="container">
@@ -246,38 +251,30 @@
                                     :value="item.value" />
                             </el-select>
                         </div>
-                        <div v-for="(item, index) in filterList" :key="item.title" class="single-blog-post" :style="{
+                        <div 
+                            v-for="(item, index) in filterList" 
+                            :key="item.title" 
+                            class="publication-items" 
+                            :style="{
                                     marginBottom: index === filterList.length - 1 
                                         ? 0
-                                        : (((index < filterList.length - 1) && item.year !== filterList[index + 1].year) ? '80px' : '40px')
+                                        : (((index < filterList.length - 1) && item.year !== filterList[index + 1].year) ? '60px' : '20px')
                                 }">
                             <h3 v-if="index === 0 || item.year !== filterList[index -1].year"
                                 style="position: absolute; top: -40px; user-select: none; line-height: 20px;">
-                                {{item.year}}年
+                                {{item.year}}年{{item.year === 2010?'以前':''}}
                             </h3>
-                            <div class="post-featured-thumb bg-cover"
-                                :style="{backgroundImage: `url(news/${item.cover})`}">
-
-                            </div>
-                            <div class="post-content">
-                                <p class="post-meta">
-                                    <i class="fal fa-angle-double-right"></i>&nbsp;{{item.publication}}
-                                </p>
-                                <p class="post-meta">
-                                    <i class="fal fa-angle-double-right"></i>&nbsp;{{item.title}}
-                                </p>
-                                <div class="post-meta">
-                                    <i class="fal fa-user"></i>&nbsp;{{item.authors}}
+                            <a 
+                                :target="item.link ? '_blank' : '_self'" 
+                                :href="item.link || 'javascript:void(0);'" 
+                                :class="['publication-items__link', item.link ? 'has-link' : 'no-link']">
+                                <div>
+                                    <i class="fal fa-angle-double-right"></i>&nbsp; {{item.title}}
                                 </div>
-                                <div class="post-meta">
-                                    <i class="fal fa-calendar-alt"></i>&nbsp;{{item.time}}
+                                <div v-if="item.authors">
+                                    <i class="fal fa-user"></i>&nbsp;<span v-html="item.authors"></span>
                                 </div>
-                                <div class="post-meta" style="margin-bottom: 0;">
-                                    <i class="fal fa-link"></i>&nbsp;<a :href="item.link" target="_blank" class="link">
-                                        {{item.link_title}}
-                                    </a>
-                                </div>
-                            </div>
+                            </a>
                         </div>
 
                         <el-empty v-if="filterList.length === 0" :description="CURRENT_LANG === 'EN'?'empty':'暂无内容'" />
@@ -300,7 +297,7 @@
                             </div>
                             <div class="footer-content">
                                 <p>
-                                    儿童青少年精神疾病与心理健康研究室（Child and Adolescent Psychiatry& Mental Health Laboratory）
+                                    临床心理学与神经科学实验室（Clinical Psychology and Neuroscience Laboratory）
                                 </p>
                             </div>
                         </div>
@@ -312,27 +309,27 @@
                             </div>
                             <ul class="list-items">
                                 <li>
-                                    <a href="https://www.andplab.com.cn" target="_blank">
+                                    <a href="https://psy.cnu.edu.cn/index.htm" target="_blank">
                                         <i class="fas fa-chevron-right"></i>
-                                        严超师兄课题组
+                                        首都师范大学心理学院
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.hudenglab.com" target="_blank">
+                                    <a href="https://childpsylab.com/" target="_blank">
                                         <i class="fas fa-chevron-right"></i>
-                                        邓虎课题组
+                                        北京儿童医院李瑛主任
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);" target="_blank">
                                         <i class="fas fa-chevron-right"></i>
-                                        王亚课题组
+                                        华东师范大学严超老师
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.bch.com.cn/Html/Index.html" target="_blank">
+                                    <a href="javascript:void(0);" target="_blank">
                                         <i class="fas fa-chevron-right"></i>
-                                        北京儿童医院官网
+                                        中科院心理所陈楚侨老师
                                     </a>
                                 </li>
                             </ul>
@@ -351,25 +348,17 @@
                                         </div>
                                         <div class="content">
                                             <p i18n="LaboratoryAddress"></p>
-                                            <h4>北京市西城区南礼士56号，北京儿童医院</h4>
+                                            <h4>北京市海淀区阜外白堆子甲23号 首都师范大学心理学院</h4>
                                         </div>
                                     </div>
                                     <div class="contact-items">
                                         <div class="icon">
-                                            <i class="fas fa-map-marker-alt"></i>
+                                            <i class="fas fa-envelope"></i>
                                         </div>
                                         <div class="content">
-                                            <p i18n="OfficeAddress"></p>
-                                            <h4>-</h4>
-                                        </div>
-                                    </div>
-                                    <div class="contact-items">
-                                        <div class="icon">
-                                            <i class="fas fa-phone-alt"></i>
-                                        </div>
-                                        <div class="content">
-                                            <p i18n="OfficePhone"></p>
-                                            <h4><a href="tel:010-5961XXXX">010-5961XXXX</a></h4>
+                                            <p i18n="Email"></p>
+                                            <h4><a href="mailto:wangyazsu@gmail.com"
+                                                class="link">wangyazsu@gmail.com</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -378,7 +367,7 @@
                     </div>
                 </div>
             </div>
-            <p style="text-align: center;line-height: 40px;">备案号：京ICP备2024069357号</p>
+            <p style="text-align: center;line-height: 40px;">备案号：XXXXXX</p>
         </div>
     </footer>
 
@@ -446,11 +435,6 @@
                                 return {
                                     ...res,
                                     year: item.year,
-                                    "publication": (CURRENT_LANG === 'EN' ? 'Publication: ' : 'Publication: ') + res.publication,
-                                    "title": (CURRENT_LANG === 'EN' ? 'Title: ' : 'Title: ') + res.title,
-                                    "authors": (CURRENT_LANG === 'EN' ? 'Authors: ' : 'Authors: ') + res.authors,
-                                    "time": (CURRENT_LANG === 'EN' ? 'Time: ' : 'Time: ') + res.time,
-                                    "link_title": (CURRENT_LANG === 'EN' ? 'Link: ' : 'Link: ') + res.link_title,
                                 }
                             });
                         }

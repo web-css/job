@@ -7,12 +7,12 @@ Version: 1.0.0
 /*CSS Table Of Content Ends Here*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-  --el-color-primary: #1f65bd;
+  --el-color-primary: #0c597f;
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #1f65bd;
-  --theme-2: #1f65bd;
+  --theme: #0c597f;
+  --theme-2: #0c597f;
   --header: #000000;
   --base: #00813d;
   --text: #000;
@@ -6504,7 +6504,7 @@ input.main-search-input::placeholder {
   height: 390px;
   background-image: linear-gradient(
     180deg,
-    #1f65bd 0%,
+    #0c597f 0%,
     rgba(166, 161, 130, 0) 100%
   );
   z-index: -1;

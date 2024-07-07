@@ -2,322 +2,490 @@
 	{
 		"position": 1,
 		"CN": {
-			"avatar": "0001.png",
-			"name": "李瑛",
+			"avatar": "1-0001.png",
+			"name": "王亚",
 			"title": "博士 实验室PI",
-			"affiliations": "国家儿童医学中心、首都医科大学附属北京儿童医院、心身医学科学科带头人，副主任医师，副教授，青年博导",
-			"education": "2018年毕业于中国科学院大学（中国科学院心理研究所）认知神经科学博士，师从欧洲科学与艺术学院院士、杰青陈楚侨老师",
+			"affiliations": "首都师范大学心理学院副教授，博导",
+			"education": "",
 			"professional_title": "",
-			"research_focus": "研究方向：儿童青少年精神疾病与心理健康",
+			"research_focus": "研究方向：精神疾病的认知缺损与干预、早期识别与干预",
+			"email": ""
+		},
+		"EN": {
+			"avatar": "1-0001.png",
+			"name": "Ya Wang, Ph.D.",
+			"title": "",
+			"affiliations": "Associate professor School of Psychology, Capital Normal University",
+			"professional_title": "",
+			"research_focus": "Research Interests: cognitive and emotional impairments and intervention of psychiatric disorders, early detection and intervention",
+			"email": ""
+		}
+	},
+	{
+		"position": 2,
+		"CN": {
+			"avatar": "2-0001.png",
+			"name": "刘佳丽",
+			"title": "",
+			"affiliations": "",
+			"education": "中国科学院心理研究所 硕士生 专业：应用心理 2021-2024",
+			"professional_title": "",
+			"research_focus": "研究兴趣：精神分裂症、神经基础、未来想象",
+			"email": "Email: hula_liu@163.com"
+		},
+		"EN": {
+			"avatar": "2-0001.png",
+			"name": "Jiali Liu",
+			"title": "",
+			"affiliations": "",
+			"education": "Master student in Applied Psychology, Institute of Psychology, Chinese Academy of Sciences, 2021-2024",
+			"professional_title": "",
+			"research_focus": "Research interest: Schizophrenia, Neural basis, Future thinking",
+			"email": "Email: hula_liu@163.com"
+		}
+	},
+	{
+		"position": 2,
+		"CN": {
+			"avatar": "2-0002.png",
+			"name": "赖文昊",
+			"title": "",
+			"affiliations": "",
+			"education": "中国科学院心理研究所  硕士生 认知神经科学方向 2022-",
+			"professional_title": "",
+			"research_focus": "研究兴趣：精神分裂症的执行功能障碍；EEG/ERP；认知行为计算建模",
+			"email": "Email: wenhao_lai@outlook.com"
+		},
+		"EN": {
+			"avatar": "2-0002.png",
+			"name": "Wenhao Lai",
+			"title": "",
+			"affiliations": "",
+			"education": "Master student in Cognitive Neuroscience, Institute of Psychology, Chinese Academy of Sciences, 2022-",
+			"professional_title": "",
+			"research_focus": "Research interest: Executive Function Deficits in Schizophrenia; EEG/ERP; Computational Modeling of Cognition and Behavior",
+			"email": "Email: wenhao_lai@outlook.com"
+		}
+	},
+	{
+		"position": 2,
+		"CN": {
+			"avatar": "2-0003.png",
+			"name": "于旭晨",
+			"title": "",
+			"affiliations": "",
+			"education": "首都师范大学心理学院 博士生 应用心理学专业临床与咨询方向 2024-",
+			"professional_title": "",
+			"research_focus": "研究兴趣：平衡时间洞察力、未来情景模拟、抑郁",
+			"email": "Email: yuxuchen2017@163.com"
+		},
+		"EN": {
+			"avatar": "2-0003.png",
+			"name": "Xuchen Yu",
+			"title": "",
+			"affiliations": "",
+			"education": "Doctoral student in Applied Psychology, School of Psychology, Capital Normal University, 2024-",
+			"professional_title": "",
+			"research_focus": "Research interest: Balanced time perspective, episodic future thinking, depression",
+			"email": "Email: yuxuchen2017@163.com"
+		}
+	},
+	{
+		"position": 2,
+		"CN": {
+			"avatar": "2-0004.png",
+			"name": "王涵",
+			"title": "",
+			"affiliations": "",
+			"education": "首都师范大学心理学院 硕士生 应用心理专业用户体验与人因分析方向 2023-",
+			"professional_title": "",
+			"research_focus": "研究兴趣：认知与情绪，人机交互",
+			"email": "Email: 2233502073@cnu.edu.cn"
+		},
+		"EN": {
+			"avatar": "2-0004.png",
+			"name": "Han Wang",
+			"title": "",
+			"affiliations": "",
+			"education": "Master student in Applied psychology, School of Psychology, Capital Normal University, 2023-",
+			"professional_title": "",
+			"research_focus": "Research interest: Cognition and emotion, human-computer interaction",
+			"email": "Email: 2233502073@cnu.edu.cn"
+		}
+	},
+	{
+		"position": 2,
+		"CN": {
+			"avatar": "2-0005.png",
+			"name": "呼布其",
+			"title": "",
+			"affiliations": "",
+			"education": "首都师范大学心理学院 硕士生 专业：应用心理学 2024-",
+			"professional_title": "",
+			"research_focus": "研究兴趣：情绪障碍、精神分裂症、认知控制",
+			"email": "Email: hubuqi0101@163.com"
+		},
+		"EN": {
+			"avatar": "2-0005.png",
+			"name": "Buqi Hu",
+			"title": "",
+			"affiliations": "",
+			"education": "Master student in applied psychology, School of Psychology, Capital Normal University, 2024-",
+			"professional_title": "",
+			"research_focus": "Research interest: Emotional disorders, schizophrenia, cognitive control",
+			"email": "Email: hubuqi0101@163.com"
+		}
+	},
+	{
+		"position": 2,
+		"CN": {
+			"avatar": "2-0006.png",
+			"name": "冯进",
+			"title": "",
+			"affiliations": "",
+			"education": "首都师范大学心理学院 硕士生 应用心理学方向 2024-",
+			"professional_title": "",
+			"research_focus": "研究兴趣：情绪、社会心理学",
+			"email": "邮箱：Psyfj2002@163.com"
+		},
+		"EN": {
+			"avatar": "2-0006.png",
+			"name": "Jin Feng",
+			"title": "",
+			"affiliations": "",
+			"education": "Master student in Applied Psychology, School of Psychology, Capital Normal University, 2024-",
+			"professional_title": "",
+			"research_focus": "Research interest: Emotion, Social Psychology",
+			"email": "Email: Psyfj2002@163.com"
+		}
+	},
+	{
+		"position": 2,
+		"CN": {
+			"avatar": "2-0007.png",
+			"name": "郝悦竹",
+			"title": "",
+			"affiliations": "",
+			"education": "首都师范大学心理学院 硕士生 应用心理专业临床与咨询方向 2024-",
+			"professional_title": "",
+			"research_focus": "研究兴趣：情绪障碍、执行功能",
+			"email": "Email: yzdyx423@163.com"
+		},
+		"EN": {
+			"avatar": "2-0007.png",
+			"name": "Yuezhu Hao",
+			"title": "",
+			"affiliations": "",
+			"education": "Master student in Applied Psychology, School of Psychology, Capital Normal University, 2024-",
+			"professional_title": "",
+			"research_focus": "Research interest: Emotional disorders, executive function",
+			"email": "Email: yzdyx423@163.com"
+		}
+	},
+	{
+		"position": 2,
+		"CN": {
+			"avatar": "2-0008.png",
+			"name": "韩晨曦",
+			"title": "",
+			"affiliations": "",
+			"education": "首都师范大学心理学院 硕士生 应用心理专业临床与咨询方向 2024-",
+			"professional_title": "",
+			"research_focus": "研究兴趣：抑郁症",
+			"email": "Email: 15863467808@139.com"
+		},
+		"EN": {
+			"avatar": "2-0008.png",
+			"name": "Chenxi Han",
+			"title": "",
+			"affiliations": "",
+			"education": "Master student in Applied Psychology, School of Psychology, Capital Normal University, 2024-",
+			"professional_title": "",
+			"research_focus": "Research interest: Depression",
+			"email": "Email: 15863467808@139.com"
+		}
+	},
+	{
+		"position": 3,
+		"CN": {
+			"avatar": "3-0001.png",
+			"name": "杨雨琪",
+			"title": "",
+			"affiliations": "",
+			"education": "首都师范大学初等教育学院，心理学院（辅修）；本科生，2020-2024",
+			"professional_title": "",
+			"research_focus": "研究兴趣：精神疾病患者的认知障碍及干预治疗",
+			"email": "Email: 1203009026@cnu.edu.cn"
+		},
+		"EN": {
+			"avatar": "3-0001.png",
+			"name": "Yuqi Yang",
+			"title": "",
+			"affiliations": "",
+			"education": "College of Elementary Education (major), School of Psychology (minor), Capital Normal University Undergraduate student, 2020-2024",
+			"professional_title": "",
+			"research_focus": "Research interest: Cognitive impairment and intervention in psychiatric patients",
+			"email": "Email: 1203009026@cnu.edu.cn"
+		}
+	},
+	{
+		"position": 3,
+		"CN": {
+			"avatar": "3-0002.png",
+			"name": "李渤宇",
+			"title": "",
+			"affiliations": "",
+			"education": "首都师范大学学前教育学院，心理学院（辅修）；本科生，2020-2024",
+			"professional_title": "",
+			"research_focus": "研究兴趣：情绪与发展心理病理",
+			"email": "Email: 1203103015@cnu.edu.cn"
+		},
+		"EN": {
+			"avatar": "3-0002.png",
+			"name": "Boyu Li",
+			"title": "",
+			"affiliations": "",
+			"education": "School of Preschool Education (major)，School of Psychology (minor)，Capital Normal University Undergraduate student, 2020-2024",
+			"professional_title": "",
+			"research_focus": "Research interest: Emotion and Developmental Psychopathology",
+			"email": "Email: 1203103015@cnu.edu.cn"
+		}
+	},
+	{
+		"position": 4,
+		"CN": {
+			"avatar": "0001.png",
+			"name": "陈星洁，中科院心理所学硕，2012-2015，毕业去向：University of Massachusetts Amherst读博，现在国外教育部门工作",
+			"title": "学生：",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
 			"email": ""
 		},
 		"EN": {
 			"avatar": "0001.png",
-			"name": "Li Ying",
-			"title": "Doctor, Principal Investigator (PI) of the Laboratory",
-			"affiliations": "National Children’s Medical Center, Beijing Children’s Hospital affiliated with Capital Medical University, leader and associate director of the Psychosomatic Medicine department, Associate Professor, mentor for young Ph.D. candidates",
-			"education": "Graduated in 2018 with a Ph.D. in Cognitive Neuroscience from the University of Chinese Academy of Sciences (Institute of Psychology, Chinese Academy of Sciences). Mentored by Academician of the European Academy of Sciences and Arts, and distinguished young scholar, Chen Chuqiao.",
+			"name": "Xingjie Chen, master student in Institute of Psychology, Chinese Academy of Sciences, 2012-2015, got PhD in University of Massachusetts Amherst, she is now working in the educational system abroad",
+			"title": "student:",
+			"affiliations": "",
+			"education": "",
 			"professional_title": "",
-			"research_focus": "Research Focus: Mental illness and mental health in children and adolescents.",
-			"email": ""
-		}
-	},
-	{
-		"position": 1,
-		"CN": {
-			"avatar": "0002.png",
-			"name": "徐会",
-			"title": "博士，实验室Co-PI",
-			"affiliations": "国家儿童医学中心、首都医科大学附属北京儿童医院，大数据中心助理研究员",
-			"education": "天津医科大学，流行病与卫生统计学，博士",
-			"professional_title": "",
-			"research_focus": "研究方向：儿童青少年神经心理发育障碍和精神心理健康；儿童青少年认知行为与心理健康队列；医学科研设计、大数据挖掘",
-			"email": ""
-		},
-		"EN": {
-			"avatar": "0002.png",
-			"name": "Xu Hui",
-			"title": "Doctor, Co-Principal Investigator (Co-PI) of the Laboratory",
-			"affiliations": "Assistant Research Fellow at the Big Data Center, National Children’s Medical Center, Beijing Children’s Hospital affiliated with Capital Medical University.",
-			"education": "Ph.D. in Epidemiology and Health Statistics from Tianjin Medical University.",
-			"professional_title": "",
-			"research_focus": "Research Focus: Neuro-psychological developmental disorders and mental health in children and adolescents; cognitive behavior and mental health cohorts in children and adolescents; medical research design, big data mining.",
-			"email": ""
-		}
-	},
-	{
-		"position": 1,
-		"CN": {
-			"avatar": "0013.png",
-			"name": "杨晗雪",
-			"title": "博士 实验室Co-PI",
-			"affiliations": "北京语言大学心理学院讲师",
-			"education": "2022年毕业于中国科学院大学（中国科学院心理研究所）认知神经科学博士，师从欧洲科学与艺术学院院士、杰青陈楚侨老师",
-			"professional_title": "",
-			"research_focus": "研究方向：精神分裂症、孤独症、情感障碍的感知觉异常和神经机制；青少年手机成瘾、拒学行为及躯体变形障碍。",
-			"email": ""
-		},
-		"EN": {
-			"avatar": "0013.png",
-			"name": "Yang Hanxue",
-			"title": "Doctor, Co-Principal Investigator (Co-PI) of the Laboratory",
-			"affiliations": "Lecturer at School of Psychology, Beijing Language and Culture University.",
-			"education": "PGraduated in 2022 with a Ph.D. in Cognitive Neuroscience from the University of Chinese Academy of Sciences (Institute of Psychology, Chinese Academy of Sciences). Mentored by Academician of the European Academy of Sciences and Arts, Raymond. C. K. Chan.",
-			"professional_title": "",
-			"research_focus": "Research Focus: Sensory and cognitive/affective abnormalities of schizophrenia, autism spectrum disorders, and mood disorders; smartphone addiction, school refusal, and body dysmorphic disorders in adolescents.",
+			"research_focus": "",
 			"email": ""
 		}
 	},
 	{
 		"position": 4,
 		"CN": {
-			"avatar": "0004.png",
-			"name": "胡娜",
-			"title": "",
-			"affiliations": "单位：首都医科大学附属北京儿童医院",
-			"education": "硕士研究生，心理学，四川大学",
-			"professional_title": "专业职称：主治医师",
-			"research_focus": "主要研究方向：精神疾病的非药物干预；青少年情感障碍及心理健康      ",
-			"email": "邮箱: foxlehu@163.com"
+			"avatar": "0001.png",
+			"name": "陈桂芳，中科院心理所同等学力硕士，2011-2016，毕业去向：清华大学读博，现为遵义医科大学附属医院副主任医师，网址：",
+			"website": "https://www.zmuhospital.com/Master/858.html",
+			"title": "学生：",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
+			"email": ""
 		},
 		"EN": {
-			"avatar": "0004.png",
-			"name": "Hu Na",
-			"title": "",
-			"affiliations": "Affiliation: Beijing Children's Hospital affiliated with Capital Medical University",
-			"education": "Education: Master's degree, Psychology, Sichuan University",
-			"professional_title": "Professional Title: Attending Physician",
-			"research_focus": "Main Research Areas: Non-pharmacological interventions in psychiatric diseases; emotional disorders and mental health in adolescents",
-			"email": "Email: foxlehu@163.com"
+			"avatar": "0001.png",
+			"name": "Guifang Chen, master student in Institute of Psychology, Chinese Academy of Sciences,2011-2016, got PhD in Tsinghua University, she is now the head of Department of Mental Health in Affiliated Hospital of Zunyi Medical University, website: ",
+			"website": "https://www.zmuhospital.com/Master/858.html",
+			"title": "student:",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
+			"email": ""
 		}
 	},
 	{
 		"position": 4,
 		"CN": {
-			"avatar": "0015.png",
-			"name": "李少维",
-			"title": "",
-			"affiliations": "厦门市湖里区妇幼保健院儿童保健科主任",
-			"education": "临床医学与基础医学双硕士学位；浙江大学医学院儿科博士生",
-			"professional_title": "专业职称：儿科主治医生，康复治疗师，心理治疗师",
-			"research_focus": "以第一作者或通讯作者发表JCR一区SCI论文2篇、中华核心期刊论文1篇。",
-			"email": "学术任职：中国妇幼保健协会儿童康复专业委员会委员、中国妇幼保健协会特殊儿童医教协同干预与发展专委会委员、福建省康复医学会物理治疗专委会常务委员、儿童康复专委会委员、福建省优生优育与妇幼保健协会县级妇幼保健工作委员会秘书、厦门市医师协会儿童保健医师分会常务委员、厦门市基层卫生协会儿童保健分会副主任委员 "
+			"avatar": "0001.png",
+			"name": "刘露露，中科院心理所学硕，2014-2017，毕业去向：University of Sydney读博，现为澳门大学助理教授，网址：",
+			"website": "https://psyc.fss.um.edu.mo/lululiu/",
+			"title": "学生：",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
+			"email": ""
 		},
 		"EN": {
-			"avatar": "0015.png",
-			"name": "Li Shaowei",
-			"title": "",
-			"affiliations": "Director of the Child Health Department, Xiamen Huli District Maternal and Child Health Hospital; ",
-			"education": "Dual Master's Degrees in Clinical Medicine and Basic Medicine; Ph.D. candidate in Pediatrics at Zhejiang University School of Medicine;",
-			"professional_title": "Professional Title: Attending Pediatrician, Rehabilitation Therapist, Psychotherapist; ",
-			"research_focus": "published 2 JCR-1 SCI papers and 1 Chinese core journal paper as the first author or corresponding author.",
-			"email": "Academic Participation: Member of the Child Rehabilitation Professional Committee of the Chinese Maternal and Child Health Association; Member of the Special Child Medical Education Collaborative Intervention and Development Committee of the Chinese Maternal and Child Health Association; Standing Member of the Physical Therapy Committee of the Fujian Rehabilitation Medicine Association; Member of the Child Rehabilitation Committee of the Fujian Rehabilitation Medicine Association; Secretary of the County-level Maternal and Child Health Working Committee of the Fujian Association for the Promotion of Healthy Birth and Child Development; Standing Member of the Child Health Physician Branch of the Xiamen Medical Association; Deputy Director of the Child Health Branch of the Xiamen Primary Health Association."
+			"avatar": "0001.png",
+			"name": "Lulu Liu, master student in Institute of Psychology, Chinese Academy of Sciences, 2014-2017, got PhD in University of Sydney, she is now an assistant professor in the University of Macau, website: ",
+			"website": "https://psyc.fss.um.edu.mo/lululiu/",
+			"title": "student:",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
+			"email": ""
 		}
 	},
 	{
 		"position": 4,
 		"CN": {
-			"avatar": "0005.png",
-			"name": "柴佳宝",
-			"title": "",
-			"affiliations": "单位：北京回龙观医院",
-			"education": "硕士研究生，精神心理专业，日本佐贺大学医学系",
-			"professional_title": "专业职称：中级心理治疗师",
-			"research_focus": "主要研究方向：精神分裂症的自我污名、儿童青少年（早发）精神疾病的识别干预与康复      ",
-			"email": "邮箱: chaijiabao1988@126.com"
+			"avatar": "0001.png",
+			"name": "陈涛，中科院心理所学硕，2015-2018，毕业去向：University of Sydney博士在读，网址：",
+			"website": "https://www.researchgate.net/profile/Tao-Chen-231",
+			"title": "学生：",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
+			"email": ""
 		},
 		"EN": {
-			"avatar": "0005.png",
-			"name": "Chai Jiabao",
-			"title": "",
-			"affiliations": "Affiliation: Beijing Hui Long Guan Hospital",
-			"education": "Education: Master's degree, Mental Health, Saga University, Japan",
-			"professional_title": "Professional Title: Intermediate Psychotherapist",
-			"research_focus": "Main Research Areas: Self-stigma in schizophrenia; identification, intervention, and rehabilitation of early-onset mental illnesses in children and adolescents",
-			"email": "Email: chaijiabao1988@126.com"
+			"avatar": "0001.png",
+			"name": "Tao Chen, master student in Institute of Psychology, Chinese Academy of Sciences, 2015-2018, he is now a PhD student in University of Sydney, website:",
+			"website": "https://www.researchgate.net/profile/Tao-Chen-231",
+			"title": "student:",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
+			"email": ""
 		}
 	},
 	{
 		"position": 4,
 		"CN": {
-			"avatar": "0006.png",
-			"name": "王红",
-			"title": "",
-			"affiliations": "单位：北京回龙观医院",
-			"education": "硕士研究生，精神卫生专业，中南大学湘雅医学院。",
-			"professional_title": "专业职称：主治医师",
-			"research_focus": "主要研究方向：儿童青少年抑郁症的干预、儿童强迫症的共病及干预。      ",
-			"email": "邮箱: whong666@163.com"
+			"avatar": "0001.png",
+			"name": "贾璐霞，中科院心理所博士，2017-2021，毕业去向：清华大学博后，现为广州大学讲师，网址：",
+			"website": "https://jyxy.gzhu.edu.cn/info/1140/3776.htm",
+			"title": "学生：",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
+			"email": ""
 		},
 		"EN": {
-			"avatar": "0006.png",
-			"name": "Wang Hong",
-			"title": "",
-			"affiliations": "Affiliation: Beijing Hui Long Guan Hospital",
-			"education": "Education: Master's degree, Mental Health, Xiangya School of Medicine, Central South University",
-			"professional_title": "Professional Title: Attending Physician",
-			"research_focus": "Main Research Areas: Interventions in adolescent depression; comorbidity and interventions in childhood OCD",
-			"email": "Email: whong666@163.com"
+			"avatar": "0001.png",
+			"name": "Luxia Jia, PhD student in Institute of Psychology, Chinese Academy of Sciences, 2017-2021, postdoc in Tsinghua University, she is now a lecture in Guangzhou University, website: ",
+			"website": "https://jyxy.gzhu.edu.cn/info/1140/3776.htm",
+			"title": "student:",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
+			"email": ""
 		}
 	},
 	{
 		"position": 4,
 		"CN": {
-			"avatar": "0007.png",
-			"name": "苏荣坤",
-			"title": "",
-			"affiliations": "单位：沈阳市精神卫生中心",
-			"education": "硕士研究生，应用心理学专业，中国医科大学。",
-			"professional_title": "专业职称：心理治疗师",
-			"research_focus": "主要研究方向：儿童青少年心理卫生、人格社会文化机制。      ",
-			"email": "邮箱: srkun568@126.com"
+			"avatar": "0001.png",
+			"name": "覃晓静，中科院心理所少干硕士，2017-2020，毕业去向：广西医科大学教师",
+			"title": "学生：",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
+			"email": ""
 		},
 		"EN": {
-			"avatar": "0007.png",
-			"name": "Su Rongkun",
-			"title": "",
-			"affiliations": "Affiliation: Shenyang Mental Health Center",
-			"education": "Education: Master's degree, Applied Psychology, China Medical University",
-			"professional_title": "Professional Title: Psychotherapist",
-			"research_focus": "Main Research Areas: Mental health in children and adolescents; personality and socio-cultural mechanisms",
-			"email": "Email: srkun568@126.com"
+			"avatar": "0001.png",
+			"name": "Xiaojing Qin, master student in Institute of Psychology, Chinese Academy of Sciences, 2017-2020, she is now a teacher in Guangxi Medical University",
+			"title": "student:",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
+			"email": ""
 		}
 	},
 	{
 		"position": 4,
 		"CN": {
-			"avatar": "0008.png",
-			"name": "黄玲英",
-			"title": "",
-			"affiliations": "单位：福建医科大学附属第一医院",
-			"education": "硕士，儿科学，福建医科大学。",
-			"professional_title": "专业职称：儿科住院医师。",
-			"research_focus": "主要研究方向：儿童青少年心理健康      ",
-			"email": "邮箱: srkun568@126.com"
-		},
-		"EN": {
-			"avatar": "0008.png",
-			"name": "Huang Lingying",
-			"title": "",
-			"affiliations": "Affiliation: The First Affiliated Hospital of Fujian Medical University",
-			"education": "Education: Master's degree, Pediatrics, Fujian Medical University",
-			"professional_title": "Professional Title: Pediatric Resident",
-			"research_focus": "Main Research Areas: Mental health in children and adolescents",
-			"email": "Email: srkun568@126.com"
-		}
-	},
-	{
-		"position": 3,
-		"CN": {
-			"avatar": "0014.png",
-			"name": "张万玲",
-			"title": "",
+			"avatar": "0001.png",
+			"name": "叶俊延，中科院心理所直博，2018-2023，毕业去向：北京大学博士后",
+			"title": "学生：",
 			"affiliations": "",
-			"education": "首都医科大学博士（在读）；精神病与精神卫生专业",
+			"education": "",
 			"professional_title": "",
-			"research_focus": "主要研究方向：儿童青少年精神疾病的心理病理机制",
+			"research_focus": "",
 			"email": ""
 		},
 		"EN": {
-			"avatar": "0014.png",
-			"name": "Zhang Wanling",
-			"title": "",
+			"avatar": "0001.png",
+			"name": "Junyan Ye, PhD student in Institute of Psychology, Chinese Academy of Sciences, 2018-2023, she is now a postdoc in Peking University",
+			"title": "student:",
 			"affiliations": "",
-			"education": "Education: PhD Candidate in Psychiatry and Mental Health at Capital Medical University",
+			"education": "",
 			"professional_title": "",
-			"research_focus": "Research Focus: Psychopathological mechanisms of mental illness in children and adolescents",
+			"research_focus": "",
 			"email": ""
 		}
 	},
 	{
-		"position": 3,
+		"position": 4,
 		"CN": {
-			"avatar": "0009.png",
-			"name": "梁连静怡",
-			"title": "",
+			"avatar": "0001.png",
+			"name": "章琴，中科院心理所学硕，2020-2023，毕业去向：深圳市儿童医院",
+			"title": "学生：",
 			"affiliations": "",
-			"education": "山东第二医科大学硕士（在读）；应用心理学专业。",
+			"education": "",
 			"professional_title": "",
-			"research_focus": "主要研究方向：儿童青少年心理健康",
+			"research_focus": "",
 			"email": ""
 		},
 		"EN": {
-			"avatar": "0009.png",
-			"name": "Liang Lianjingyi",
-			"title": "",
+			"avatar": "0001.png",
+			"name": "Qin Zhang, master student in Institute of Psychology, Chinese Academy of Sciences, 2020-2023, she is now working in Shenzhen Children’s Hospital",
+			"title": "student:",
 			"affiliations": "",
-			"education": "Education: Master’s candidate in Applied Psychology at Shandong Second Medical University",
+			"education": "",
 			"professional_title": "",
-			"research_focus": "Main Research Areas: Mental health in children and adolescents",
+			"research_focus": "",
 			"email": ""
 		}
 	},
 	{
-		"position": 3,
+		"position": 4,
 		"CN": {
-			"avatar": "0010.png",
-			"name": "孙秀丽",
-			"title": "",
+			"avatar": "0001.png",
+			"name": "张逸冰，2015，中国青年政治学院本科，后去宾夕法尼亚大学读硕士，目前在国外某公司工作",
+			"title": "科研助理/实习：",
 			"affiliations": "",
-			"education": "山东第二医科大学硕士（在读）；应用心理学专业。",
+			"education": "",
 			"professional_title": "",
-			"research_focus": "主要研究方向：儿童青少年心理健康",
+			"research_focus": "",
 			"email": ""
 		},
 		"EN": {
-			"avatar": "0010.png",
-			"name": "Sun Xiuli",
-			"title": "",
+			"avatar": "0001.png",
+			"name": "Yibing Zhang, 2015, undergraduate student in China Youth University of Political Studies, got master degree in University of Pennsylvania, she is now working in a company abroad",
+			"title": "Research assistant/internship:",
 			"affiliations": "",
-			"education": "Education: Master’s candidate in Applied Psychology at Shandong Second Medical University",
+			"education": "",
 			"professional_title": "",
-			"research_focus": "Main Research Areas: Mental health in children and adolescents",
+			"research_focus": "",
 			"email": ""
 		}
 	},
 	{
-		"position": 3,
+		"position": 4,
 		"CN": {
-			"avatar": "0011.png",
-			"name": "李昕然 Stephanie",
-			"title": "",
-			"affiliations": "单位：University of North Carolina at Chapel Hill",
-			"education": "最高学历、专业及学校：本科，Psychology B.S.(心理学理学学士）; Human development & family Sciences B.A.Ed. （人类发展和家庭科学 教育学文学学士）",
-			"professional_title": "专业职称：科研助理",
-			"research_focus": "主要研究方向：儿童青少年心理健康；早年逆境对大脑理性和情绪调节的影响; 心理教育测试和文化适应对学生的影响",
+			"avatar": "0001.png",
+			"name": "张馨斓，2022，宾州州立大学本科，后去佛罗里达大学读硕士（方向：mental health counseling）",
+			"title": "科研助理/实习：",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
 			"email": ""
 		},
 		"EN": {
-			"avatar": "0011.png",
-			"name": "Stephanie Li Xinran",
-			"title": "",
-			"affiliations": "Affiliation: University of North Carolina at Chapel Hill",
-			"education": "Education: Bachelor of Science in Psychology (B.S.); Bachelor of Arts in Education for Human Development & Family Sciences (B.A.Ed.)",
-			"professional_title": "Professional Title: Research Assistant",
-			"research_focus": "Main Research Areas: Mental health in children and adolescents; the impact of early adversity on brain rationality and emotional regulation; the effects of psychoeducational testing and cultural adaptation on students",
-			"email": ""
-		}
-	},
-	{
-		"position": 5,
-		"CN": {
-			"avatar": "0012.png",
-			"name": "洪煦",
-			"title": "",
-			"affiliations": "单位：电科云（北京）科技有限公司",
-			"education": "最高学历、专业及学校：学士，国际政治专业，北京第二外国语学院。",
-			"professional_title": "专业职称：工程师",
-			"research_focus": "主要研究方向：数字心理健康、数据智能产品。",
-			"email": ""
-		},
-		"EN": {
-			"avatar": "0012.png",
-			"name": "Hong Xu",
-			"title": "",
-			"affiliations": "Affiliation: Cloud Services Innovation Laboratory，China Electronics Technology Group Corporation",
-			"education": "Education: Bachelor’s degree in International Politics from Beijing Second Foreign Language Institute",
-			"professional_title": "Professional Title: Engineer",
-			"research_focus": "Main Research Areas: Digital mental health, data intelligence products.",
+			"avatar": "0001.png",
+			"name": "Xinlan Zhang, 2022, undergraduate student in Pennsylvania State University, she is now a master student in University of Florida",
+			"title": "Research assistant/internship:",
+			"affiliations": "",
+			"education": "",
+			"professional_title": "",
+			"research_focus": "",
 			"email": ""
 		}
 	}
